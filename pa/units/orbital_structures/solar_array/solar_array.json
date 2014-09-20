@@ -1,0 +1,72 @@
+{
+  "TEMP_texelinfo": 25.0, 
+  "attachable": {
+    "offsets": {
+      "root": [
+        0, 
+        0, 
+        0
+      ]
+    }
+  }, 
+  "base_spec": "/pa/units/orbital_structures/base_orbital_structure/base_orbital_structure.json",
+  "build_metal_cost": 400, 
+  "command_caps": [
+    "ORDER_Move", 
+    "ORDER_Patrol", 
+    "ORDER_Assist"
+  ], 
+  "description": "Solar Array: Orbital energy generation", 
+  "display_name": "Solar Array", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/orbital", 
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }, 
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/bomber_fire"
+    }
+  }, 
+  "max_health": 500, 
+  "mesh_bounds": [
+    50, 
+    15, 
+    6
+  ], 
+  "model": {
+    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json", 
+    "filename": "/pa/units/orbital/solar_array/solar_array.papa"
+  }, 
+  "physics": {
+    "gravity_scalar": 0.001, 
+    "push_class": 25, 
+    "radius": 8
+  }, 
+  "production": {
+    "energy": 1000
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 100, 
+          "shape": "sphere"
+        }
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_Orbital", 
+  "unit_types": [
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Orbital", 
+    "UNITTYPE_EnergyProduction", 
+    "UNITTYPE_Economy", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_FabOrbBuild"
+  ]
+}

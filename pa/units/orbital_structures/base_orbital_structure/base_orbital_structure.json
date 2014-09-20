@@ -1,0 +1,150 @@
+{
+  "strategic_icon_priority":5,
+  "TEMP_texelinfo": 1.0, 
+  "armor_type": "AT_Structure", 
+  "build_metal_cost": 1, 
+  "description": "Base Orbital Structure Description - If you're seeing this, something is wrong in your structure.", 
+  "display_name": "Base Orbital Structure", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/factory"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/Factory", 
+      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+    }, 
+    "fired": {
+      "audio_cue": "/SE/Weapons/base/base_fire_laser"
+    }
+  }, 
+  "max_health": 1, 
+  "orbital_offset": [
+    {
+      "color_at_ground": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "color_at_unit": [
+        1.0, 
+        1.0, 
+        1.0, 
+        0.0
+      ], 
+      "effect": "particle_line_arrow_transparent_nohdr", 
+      "enabled": true, 
+      "offset_from_ground": 1.0, 
+      "offset_from_unit": 4.0, 
+      "scale": 3.0, 
+      "texture": "/pa/effects/textures/particles/uncompressed/orbital_line_ally.papa", 
+      "use_team_color": true, 
+      "uv_factor": 64.0, 
+      "view_type": "Ally"
+    }, 
+    {
+      "color_at_ground": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "color_at_unit": [
+        1.0, 
+        1.0, 
+        1.0, 
+        0.0
+      ], 
+      "effect": "particle_line_arrow_transparent_nohdr", 
+      "enabled": true, 
+      "offset_from_ground": 1.0, 
+      "offset_from_unit": 4.0, 
+      "scale": 7.0, 
+      "texture": "/pa/effects/textures/particles/uncompressed/orbital_line_unselected.papa", 
+      "use_team_color": true, 
+      "uv_factor": 64.0, 
+      "view_type": "Unselected Preview"
+    }, 
+    {
+      "color_at_ground": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "color_at_unit": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "effect": "particle_line_arrow_transparent_nohdr", 
+      "enabled": true, 
+      "offset_from_ground": 1.0, 
+      "offset_from_unit": 4.0, 
+      "scale": 7.0, 
+      "texture": "/pa/effects/textures/particles/uncompressed/orbital_line_selected.papa", 
+      "use_team_color": true, 
+      "uv_factor": 64.0, 
+      "view_type": "Selected"
+    }, 
+    {
+      "color_at_ground": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "color_at_unit": [
+        1.0, 
+        1.0, 
+        1.0, 
+        0.0
+      ], 
+      "effect": "particle_line_arrow_transparent_nohdr", 
+      "enabled": true, 
+      "offset_from_ground": 1.0, 
+      "offset_from_unit": 4.0, 
+      "scale": 3.0, 
+      "texture": "/pa/effects/textures/particles/uncompressed/orbital_line_enemy.papa", 
+      "use_team_color": true, 
+      "uv_factor": 64.0, 
+      "view_type": "Enemy"
+    }
+  ], 
+  "physics": {
+    "air_friction": 1.0, 
+    "allow_pushing": false, 
+    "allow_underground": false, 
+    "collision_layers": "WL_Orbital", 
+    "ignore_collisions": false, 
+    "push_class": 255, 
+    "push_sideways": false, 
+    "radius": 1, 
+    "shape": "Box", 
+    "type": "Structure"
+  }, 
+  "recon": {
+    "observable": {
+      "layer": "orbital", 
+      "show_ghost": true
+    }, 
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 100, 
+          "shape": "sphere"
+        }
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_Orbital", 
+  "strategic_icon_priority": 2, 
+  "unit_types": [
+    "UNITTYPE_Structure", 
+    "UNITTYPE_NoBuild"
+  ], 
+  "wreckage_health_frac": 0
+}
