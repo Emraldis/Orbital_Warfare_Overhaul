@@ -1,0 +1,14 @@
+{
+  "base_spec": "/pa/tools/build_arm/mobile.json", 
+  "construction_demand": {
+    "energy": 1000, 
+    "metal": 10
+  }, 
+  "firing_arc_pitch": 360, 
+  "firing_arc_yaw": 360, 
+  "max_range": 30, 
+  "pitch_range": 180, 
+  "pitch_rate": 360, 
+  "yaw_range": 180, 
+  "yaw_rate": 360
+}

@@ -1,0 +1,103 @@
+{
+  "TEMP_texelinfo": 10.6806, 
+  "attachable": {
+    "offsets": {
+      "root": [
+        0, 
+        0, 
+        0
+      ]
+    }
+  }, 
+  "base_spec": "/pa/units/orbital_units/base_orbital/base_orbital.json", 
+  "build_metal_cost": 900, 
+  "command_caps": [
+    "ORDER_Move", 
+    "ORDER_Patrol", 
+    "ORDER_Assist"
+  ], 
+  "consumption": {
+    "energy": 1000
+  }, 
+  "description": "Celestial Radar Satellite: A stelthed spy satellite for accurate observations", 
+  "display_name": "Argus", 
+  "energy_efficiency_requirement": 0.9, 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/radar"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/radar", 
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }, 
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/bomber_fire"
+    }
+  }, 
+  "gravwell_velocity_multiplier": 6.0, 
+  "max_health": 300, 
+  "mesh_bounds": [
+    25, 
+    15, 
+    15
+  ], 
+  "model": {
+    "animations": {
+      "closed": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_closed.papa", 
+      "deploy": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_deploy.papa", 
+      "open": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_open.papa"
+    }, 
+    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json", 
+    "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.papa"
+  }, 
+  "navigation": {
+    "acceleration": 5, 
+    "brake": 90, 
+    "hover_time": -1.0, 
+    "move_speed": 60, 
+    "turn_speed": 90, 
+    "type": "orbital"
+  }, 
+  "physics": {
+    "gravity_scalar": 0.001, 
+    "push_class": 50, 
+    "radius": 5
+  }, 
+  "recon": {
+    "observable": {
+      "layer": "orbital",
+      "ignore_radar": true,
+    "uses_energy": true
+    },
+    "observer": {
+      "items": [
+        {
+          "uses_energy": true,
+          "radius": 1,
+          "shape": "capsule",
+          "channel": "sight",
+          "layer": "celestial"
+        },
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 250, 
+          "shape": "capsule" 
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 250, 
+          "shape": "capsule" 
+        }
+      ]
+    }
+  }, 
+  "unit_types": [
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Orbital", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_Recon", 
+    "UNITTYPE_FactoryBuild"
+  ]
+}

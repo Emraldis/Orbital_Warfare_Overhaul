@@ -1,0 +1,106 @@
+{
+  "TEMP_texelinfo": 26.4194, 
+  "area_build_separation": 75, 
+  "area_build_type": "Sphere", 
+  "atrophy_cool_down": 15.0, 
+  "atrophy_rate": 60, 
+  "attachable": {
+    "offsets": {
+      "root": [
+        0, 
+        0, 
+        0
+      ]
+    }
+  }, 
+  "base_spec": "/pa/units/orbital_units/base_orbital/base_orbital.json", 
+  "build_metal_cost": 1200, 
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack", 
+    "ORDER_Assist"
+  ], 
+  "description": "Heavy Riot-Control Platform: A medium-range flak unit, targets air and orbital. Weak vs Long-Range & Heavy-Hitter", 
+  "display_name": "Aegis", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/orbital", 
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }, 
+    "fired": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
+    }
+  }, 
+  "gravwell_velocity_multiplier": 6.0, 
+  "guard_layer": "WL_Orbital", 
+  "guard_radius": 140, 
+  "max_health": 1000, 
+  "mesh_bounds": [
+    23, 
+    23, 
+    6
+  ], 
+  "model": {
+    "animtree": "/pa/anim/anim_trees/defense_satellite_anim_tree.json", 
+    "filename": "/pa/units/orbital/defense_satellite/defense_satellite.papa"
+  }, 
+  "navigation": {
+    "brake": 90,
+    "acceleration": 5,
+    "move_speed": 60,
+    "hover_time": -1,
+    "type": "orbital",
+    "turn_speed": 30
+  },
+  "physics": {
+    "collision_layers": "WL_Orbital", 
+    "gravity_scalar": 0.001, 
+    "push_class": 50, 
+    "radius": 15
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 100, 
+          "shape": "sphere"
+        }
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_Orbital", 
+  "tools": [
+    {
+      "aim_bone": "bone_turret01", 
+      "muzzle_bone": "bone_turret01", 
+      "spec_id": "/pa/units/orbital_units/defense_satellite/defense_satellite_tool_weapon.json"
+    }, 
+    {
+      "aim_bone": "bone_turret02", 
+      "muzzle_bone": "bone_turret02", 
+      "spec_id": "/pa/units/orbital_units/defense_satellite/defense_satellite_tool_weapon.json"
+    }, 
+    {
+      "aim_bone": "bone_turret03", 
+      "muzzle_bone": "bone_turret03", 
+      "spec_id": "/pa/units/orbital_units/defense_satellite/defense_satellite_tool_weapon.json"
+    }, 
+    {
+      "aim_bone": "bone_turret04", 
+      "muzzle_bone": "bone_turret04", 
+      "spec_id": "/pa/units/orbital_units/defense_satellite/defense_satellite_tool_weapon.json"
+    }
+  ], 
+  "unit_types": [
+    "UNITTYPE_Orbital", 
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Mobile"
+  ]
+}

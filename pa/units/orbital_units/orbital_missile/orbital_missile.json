@@ -1,0 +1,112 @@
+{
+  "TEMP_texelinfo": 1,
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/orbital_units/orbital_missile/orbital_missile_tool_weapon.json",
+      "muzzle_bone": "bone_root"
+    }
+  ],
+  "guard_radius": 200,
+  "build_metal_cost": 150,
+  "gravwell_velocity_multiplier": 6,
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "navigation": {
+    "aggressive_distance": 150,
+    "type": "orbital",
+    "bank_factor": 1,
+    "turn_speed": 90,
+    "move_speed": 75,
+    "hover_time": -1,
+    "acceleration": 45,
+    "brake": 150
+  },
+  "fx_offsets": [
+    {
+      "type": "moving",
+      "bone": "bone_root",
+      "offset": [
+        0,
+        5,
+        0
+      ],
+      "filename": "/pa/effects/misc/jets.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "max_health": 10,
+  "events": {
+    "died": {
+      "effect_scale": 2,
+      "audio_cue": "/SE/Death/orbital",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    },
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    }
+  },
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "display_name": "Artemis",
+  "description": "Fast Suicide Missile: A Missile filled with explosives for taking out orbital units. Weak vs Riot-Control & Heavy",
+  "model": {
+    "arrows": 5,
+    "filename": "/pa/units/orbital_units/orbital_missile/orbital_missile.papa"
+  },
+  "system_velocity_multiplier": 6,
+  "physics": {
+    "push_class": 1,
+    "gravity_scalar": 0.001,
+    "radius": 1
+  },
+  "spawn_layers": "WL_Orbital",
+  "base_spec": "/pa/units/orbital_units/base_orbital/base_orbital.json",
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "orbital",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 250
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 75
+        }
+      ]
+    }
+  },
+  "influence_radius": 10,
+  "guard_layer": "WL_Orbital",
+  "wreckage_health_frac": 0,
+  "mesh_bounds": [
+    5,
+    5,
+    3
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "TEMP_texelinfo": 31.6199, 
+  "attachable": {
+    "offsets": {
+      "root": [
+        0, 
+        0, 
+        0
+      ]
+    }
+  }, 
+  "base_spec": "/pa/units/orbital_units/base_orbital/base_orbital.json", 
+  "build_metal_cost": 1000, 
+  "command_caps": [
+    "ORDER_Move", 
+    "ORDER_Patrol", 
+    "ORDER_Attack"
+  ], 
+  "description": "Slow Suppression Satellite: Bombardment unit that drops kinetic harpoons. Uses Energy. Weak vs Anti-Orbital & Orbital", 
+  "display_name": "SXX-1304 Laser Platform", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/orbital", 
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }, 
+    "fired": {
+      "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire", 
+      "effect_spec": "/pa/units/orbital_units/orbital_bombardment_platform/orbital_bombardment_platform_muzzle_flash.pfx socket_muzzle"
+    }
+  }, 
+  "gravwell_velocity_multiplier": 6.0, 
+  "guard_layer": "WL_AnySurface", 
+  "guard_radius": 100, 
+  "max_health": 200, 
+  "mesh_bounds": [
+    38, 
+    38, 
+    40
+  ], 
+  "model": {
+    "animations": {
+      "closed": "/pa/units/orbital/orbital_laser/orbital_laser_anim_closed.papa", 
+      "deploy": "/pa/units/orbital/orbital_laser/orbital_laser_anim_deploy.papa", 
+      "open": "/pa/units/orbital/orbital_laser/orbital_laser_anim_open.papa"
+    }, 
+    "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json", 
+    "filename": "/pa/units/orbital/orbital_laser/orbital_laser.papa"
+  }, 
+  "navigation": {
+    "acceleration": 10, 
+    "brake": 10, 
+    "hover_time": -1.0, 
+    "move_speed": 25, 
+    "turn_speed": 90, 
+    "type": "orbital"
+  }, 
+  "physics": {
+    "gravity_scalar": 0.001, 
+    "push_class": 15, 
+    "radius": 10
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 50, 
+          "shape": "capsule"
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 150, 
+          "shape": "sphere"
+        }
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_Orbital", 
+  "tools": [
+    {
+      "aim_bone": "bone_recoil", 
+      "muzzle_bone": "socket_muzzle", 
+      "spec_id": "/pa/units/orbital_units/orbital_bombardment_platform/orbital_bombardment_platform_tool_weapon.json"
+    }
+  ], 
+  "unit_types": [
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Orbital", 
+    "UNITTYPE_LaserPlatform", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_FactoryBuild"
+  ]
+}
