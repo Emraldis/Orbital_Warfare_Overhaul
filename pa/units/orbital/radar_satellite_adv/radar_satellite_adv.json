@@ -1,5 +1,5 @@
 {
-   "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
+   "base_spec":"/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
    "display_name":"!LOC(units:advanced_radar_satellite.message):Advanced Radar Satellite",
    "description":"!LOC(units:advanced_radar_satellite_detects_a_vast_area_for_enemy_land_sea_and_air_units.message):Advanced radar satellite- Detects a vast area for enemy land, sea, and air units.",
    "max_health":5000,
@@ -27,10 +27,10 @@
       "UNITTYPE_FabOrbBuild"
    ],
    "physics":{
-      "radius":5,
-      "push_class":15,
-      "collision_layers":"WL_Orbital",
-      "ignore_gravity":true
+      "radius":15,
+      "push_class":50,
+      "gravity_scalar":0.001,
+      "collision_layers":"WL_Orbital"
    },
    "recon":{
       "observer":{
