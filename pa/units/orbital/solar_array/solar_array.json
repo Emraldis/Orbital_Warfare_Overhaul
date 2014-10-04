@@ -26,10 +26,10 @@
       "UNITTYPE_FabOrbBuild"
    ],
    "physics":{
-      "radius":8,
-      "push_class":15,
-      "collision_layers":"WL_Orbital",
-      "ignore_gravity":true
+      "radius":15,
+      "push_class":50,
+      "gravity_scalar":0.001,
+      "collision_layers":"WL_Orbital"
    },
    "recon":{
       "observer":{
