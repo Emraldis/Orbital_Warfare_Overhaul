@@ -27,10 +27,9 @@
       "UNITTYPE_FabOrbBuild"
    ],
    "physics":{
-      "radius":15,
-      "push_class":50,
-      "gravity_scalar":0.001,
-      "collision_layers":"WL_Orbital"
+      "radius":5,
+      "push_class":15,
+      "gravity_scalar":0.001
    },
    "recon":{
       "observer":{
@@ -39,7 +38,7 @@
                "layer":"surface_and_air",
                "channel":"radar",
                "shape":"capsule",
-               "radius":1000,
+               "radius":1500,
                "uses_energy":true
             },
             {
