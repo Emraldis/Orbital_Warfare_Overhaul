@@ -9,12 +9,9 @@
    "pitch_range":180,
    "auto_attack":true,
    "target_layers":[
-      "WL_Orbital",
-      
+      "WL_Orbital"
    ],
    "target_priorities":[
-      "Orbital",
-      "Structure - Wall",
-      "Mobile"
+      "Orbital"
    ]
 }
