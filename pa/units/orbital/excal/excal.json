@@ -3,7 +3,7 @@
    "display_name":"Excalibur",
    "description":"Long-range orbital structure assault",
    "max_health":1000,
-   "build_metal_cost":2400,
+   "build_metal_cost":4400,
    "unit_types":[
       "UNITTYPE_Fighter",
       "UNITTYPE_Orbital",

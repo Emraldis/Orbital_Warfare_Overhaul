@@ -3,7 +3,7 @@
    "display_name":"!LOC(units:solar_array.message):Solar Array",
    "description":"!LOC(units:manufacturing_orbital_energy_generation.message):Manufacturing- Orbital energy generation.",
    "max_health":2500,
-   "build_metal_cost":2800,
+   "build_metal_cost":3000,
    "spawn_layers":"WL_Orbital",
    "attachable":{
       "offsets":{
@@ -15,7 +15,7 @@
       }
    },
    "production":{
-      "energy":4000
+      "energy":5000
    },
    "unit_types":[
       "UNITTYPE_Structure",

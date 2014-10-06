@@ -9,10 +9,10 @@
    "area_build_separation":50,
    "build_restrictions":"Terrainless",
    "production":{
-      "metal":36
+      "metal":28
    },
    "consumption":{
-      "energy":1000
+      "energy":3000
    },
    "storage":{
       "metal":10000
