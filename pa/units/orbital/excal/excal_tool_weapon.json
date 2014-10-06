@@ -2,7 +2,7 @@
    "base_spec":"/pa/tools/base_fighter_turret/base_fighter_turret.json",
    "ammo_id":"/pa/units/orbital/excal/excal_ammo.json",
    "rate_of_fire":0.3,
-   "max_range":200,
+   "max_range":350,
    "firing_arc_yaw":1,
    "firing_arc_pitch":1,
    "auto_attack":true,
