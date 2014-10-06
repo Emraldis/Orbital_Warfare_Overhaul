@@ -17,6 +17,7 @@
   "icon": "",
   "priority": 100,
   "dependencies": [
+	"com.pa.owo.icons"
 
   ]  
 }
