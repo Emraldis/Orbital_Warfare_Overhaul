@@ -76,7 +76,7 @@ function BuildHotkeyModel() {
             "/pa/units/orbital/orbital_factory/orbital_factory.json": ["orbital", 9],
             "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital", 8],
 			"/pa/units/orbital/hammerhead/hammerhead.json": ["orbital", 3],
-			"/pa/units/orbital/excal/excal.json": ["orbital", 10],
+			"/pa/units/orbital/excal/excal.json": ["orbital", 4],
                  
             "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json": ["air", 5],
             "/pa/units/air/gunship/gunship.json": ["air", 6],
