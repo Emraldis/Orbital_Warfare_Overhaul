@@ -24,13 +24,13 @@
    ],
    "navigation":{
       "type":"orbital",
-      "acceleration":30,
+      "acceleration":15,
       "brake":30,
-      "move_speed":40,
-      "turn_speed":40,
-      "aggressive_distance":75.0,
+      "move_speed":25,
+      "turn_speed":30,
+      "aggressive_distance":175.0,
       "aggressive_behavior":"line",
-      "bank_factor":5,
+      "bank_factor":3,
       "vertical_speed":300
    },
    "physics":{
