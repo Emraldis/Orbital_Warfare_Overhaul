@@ -3,7 +3,7 @@
    "display_name":"Sentinel",
    "description":"Stationary anti-surface defense structure.",
    "max_health":3000,
-   "build_metal_cost":4800,
+   "build_metal_cost":2800,
    "atrophy_rate":60,
    "atrophy_cool_down":15.0,
    "spawn_layers":"WL_Orbital",

@@ -1,7 +1,7 @@
 {
    "base_spec":"/pa/tools/base_laser_turret/base_laser_turret.json",
    "ammo_id":"/pa/units/orbital/sentinel/sentinel_ammo.json",
-   "rate_of_fire":1,
+   "rate_of_fire":1.25,
    "max_range":250,
    "yaw_rate":720,
    "pitch_rate":720,
