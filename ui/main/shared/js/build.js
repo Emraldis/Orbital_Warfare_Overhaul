@@ -65,42 +65,12 @@ function BuildHotkeyModel() {
             "/pa/units/land/bot_tactical_missile/bot_tactical_missile.json": ["bot", 9],
      
             
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "/pa/units/orbital/orbital_laser/orbital_laser.json": ["orbital unit", 6],          
-            "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json": ["orbital unit", 10],
-            "/pa/units/orbital/orbital_fighter/orbital_fighter.json": ["orbital unit", 11],
-            "/pa/units/orbital/radar_satellite/radar_satellite.json": ["orbital unit", 12],
-            "/pa/units/orbital/orbital_lander/orbital_lander.json": ["orbital unit", 13],
-			"/pa/units/orbital/hammerhead/hammerhead.json": ["orbital unit", 7],
-			"/pa/units/orbital/excal/excal.json": ["orbital unit", 8],
-			
-            "/pa/units/orbital/orbital_factory/orbital_factory.json": ["orbital structure", 9],
-            "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital structure", 8],
-			"/pa/units/orbital/orbital_sentinel/orbital_sentinel.json": ["orbital structure",11],
-            "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital structure", 7],
-            "/pa/units/orbital/solar_array/solar_array.json": ["orbital structure", 5],
-            "/pa/units/orbital/defense_satellite/defense_satellite.json": ["orbital structure", 14], 
-=======
-            "/pa/units/orbital/orbital_laser/orbital_laser.json": ["orbital units", 6],
-            "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital units", 7],
-            "/pa/units/orbital/solar_array/solar_array.json": ["orbital structures", 5],
-            "/pa/units/orbital/defense_satellite/defense_satellite.json": ["orbital structures", 14],
-			"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital structures", 1],
-			"/pa/units/orbital/sentinel/sentinel.json": ["orbital structures", 2],
-            "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json": ["orbital units", 10],
-            "/pa/units/orbital/orbital_fighter/orbital_fighter.json": ["orbital units", 11],
-            "/pa/units/orbital/radar_satellite/radar_satellite.json": ["orbital units", 12],
-            "/pa/units/orbital/orbital_lander/orbital_lander.json": ["orbital units", 13],
-            "/pa/units/orbital/orbital_factory/orbital_factory.json": ["orbital structures", 9],
-            "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital structures", 8],
-			"/pa/units/orbital/hammerhead/hammerhead.json": ["orbital units", 3],
-			"/pa/units/orbital/excal/excal.json": ["orbital units", 4],
-=======
             "/pa/units/orbital/orbital_laser/orbital_laser.json": ["orbital", 6],
             "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital", 7],
             "/pa/units/orbital/solar_array/solar_array.json": ["orbital", 5],
-            "/pa/units/orbital/defense_satellite/defense_satellite.json": ["orbital", 14],           
+            "/pa/units/orbital/defense_satellite/defense_satellite.json": ["orbital", 14],
+			"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital", 1],
+			"/pa/units/orbital/sentinel/sentinel.json": ["orbital", 2],
             "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json": ["orbital", 10],
             "/pa/units/orbital/orbital_fighter/orbital_fighter.json": ["orbital", 11],
             "/pa/units/orbital/radar_satellite/radar_satellite.json": ["orbital", 12],
@@ -109,7 +79,6 @@ function BuildHotkeyModel() {
             "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital", 8],
 			"/pa/units/orbital/hammerhead/hammerhead.json": ["orbital", 3],
 			"/pa/units/orbital/excal/excal.json": ["orbital", 4],
->>>>>>> parent of 8415ebe... Added Sentinel and Guardian
                  
             "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json": ["air", 5],
             "/pa/units/air/gunship/gunship.json": ["air", 6],
