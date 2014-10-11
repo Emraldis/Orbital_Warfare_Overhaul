@@ -8,7 +8,7 @@
    "firing_arc_yaw":150,
    "firing_arc_pitch":150,
    "auto_attack":true,
-   "height_range":400,
+   "height_range":400
    "target_layers":[
       "WL_Orbital"
    ],

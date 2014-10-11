@@ -10,8 +10,8 @@
 	"auto_attack": true,
 	"height_range": 400,
 	"spread_fire": true,
-   "firing_arc_yaw":180,
-   "firing_arc_pitch":180,
+    "firing_arc_yaw":180,
+    "firing_arc_pitch":180,
 	"target_layers": [
 	"WL_Air"]
 }
