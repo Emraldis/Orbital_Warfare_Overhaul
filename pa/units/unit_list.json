@@ -116,8 +116,6 @@
 	"/pa/units/orbital/solar_array/solar_array.json",
 	"/pa/units/orbital/hammerhead/hammerhead.json",
 	"/pa/units/orbital/excal/excal.json",
-	"/pa/units/orbital/sentinel/sentinel.json",
-	"/pa/units/orbital/missile_platform/missile_platform.json",
 	"/pa/units/sea/attack_sub/attack_sub.json",
 	"/pa/units/sea/base_ship/base_ship.json",
 	"/pa/units/sea/battleship/battleship.json",
