@@ -112,6 +112,7 @@
 	"/pa/units/orbital/orbital_launcher/orbital_launcher.json",
 	"/pa/units/orbital/radar_satellite/radar_satellite.json",
 	"/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json",
+	"/pa/units/orbital/orbital_sentinel/orbital_sentinel.json",
 	"/pa/units/orbital/solar_array/solar_array.json",
 	"/pa/units/orbital/hammerhead/hammerhead.json",
 	"/pa/units/orbital/excal/excal.json",
