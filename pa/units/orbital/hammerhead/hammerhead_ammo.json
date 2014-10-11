@@ -6,5 +6,6 @@
    "max_velocity":200.0,
    "splash_damage":7,
    "turn_rate":90,
+   "flight_type":Seeking,
    "splash_radius":50
 }

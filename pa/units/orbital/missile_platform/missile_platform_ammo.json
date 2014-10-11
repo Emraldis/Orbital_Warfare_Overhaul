@@ -5,6 +5,7 @@
    "lifetime": 4,
    "max_velocity": 300.0,
    "turn_rate": 360,
+   "flight_type":Seeking,
    "splash_damage": 30,
    "splash_radius": 30
 }
