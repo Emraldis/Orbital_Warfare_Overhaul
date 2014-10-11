@@ -6,7 +6,7 @@
    "yaw_range":150,
    "pitch_range":45,
    "firing_arc_yaw":150,
-   "firing_arc_pitch":45,
+   "firing_arc_pitch":150,
    "auto_attack":true,
    "height_range":400,
    "target_layers":[

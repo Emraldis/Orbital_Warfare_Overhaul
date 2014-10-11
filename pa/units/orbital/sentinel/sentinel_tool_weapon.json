@@ -12,12 +12,10 @@
     "WL_LandHorizontal",
 	"WL_WaterSurface",
 	"WL_Seafloor",
-	"WL_Air"
    ],
    "target_priorities":[
     "WL_LandHorizontal",
 	"WL_WaterSurface",
 	"WL_Seafloor",
-	"WL_Air"
    ]
 }
