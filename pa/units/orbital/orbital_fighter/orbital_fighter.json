@@ -2,9 +2,9 @@
    "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
    "display_name":"!LOC(units:avenger.message):Avenger",
    "description":"!LOC(units:orbital_fighter_fast_moving_orbital_fighter_for_offense_and_defense.message):Orbital fighter- Fast moving orbital fighter for offense and defense.",
-   "build_metal_cost":800,
-   "max_health":250,
-   "gravwell_velocity_multiplier":6.0,
+   "build_metal_cost":200,
+   "max_health":125,
+   "gravwell_velocity_multiplier":12.0,
    "wreckage_health_frac":0.0,
    "spawn_layers":"WL_Orbital",
    "attachable":{
@@ -40,8 +40,8 @@
       "circle_min_time":2,
       "circle_max_time":4,
       "hover_time":-1.0,
-      "aggressive_behavior":"circle",
-      "aggressive_distance":150,
+      "aggressive_behavior":"line",
+      "aggressive_distance":90,
       "bank_factor":1
    },
    "physics":{
