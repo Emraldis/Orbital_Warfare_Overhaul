@@ -3,7 +3,7 @@
    "display_name":"!LOC(units:sxx_1304_laser_platform.message):SXX-1304 Laser Platform",
    "description":"!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
    "max_health":1500,
-   "build_metal_cost":24000,
+   "build_metal_cost":14000,
    "spawn_layers":"WL_Orbital",
    "gravwell_velocity_multiplier":6.0,
    "attachable":{
@@ -32,10 +32,10 @@
    "guard_layer":"WL_AnySurface",
    "navigation":{
       "type":"orbital",
-      "acceleration":10,
-      "brake":10,
+      "acceleration":5,
+      "brake":5,
       "move_speed":25,
-      "turn_speed":90,
+      "turn_speed":50,
       "hover_time":-1.0
    },
    "physics":{

@@ -3,8 +3,8 @@
    "damage":750,
    "splash_damage":0,
    "splash_radius":0,
-   "initial_velocity":500.0,
-   "max_velocity":500.0,
+   "initial_velocity":200.0,
+   "max_velocity":200.0,
    "lifetime":5,
    "fx_trail":{
       "filename":"/pa/units/orbital/ion_defense/ion_defense_proj_trail.pfx"

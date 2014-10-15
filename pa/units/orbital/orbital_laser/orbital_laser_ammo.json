@@ -2,10 +2,9 @@
    "base_spec":"/pa/ammo/base_ammo/base_ammo.json",
    "spawn_layers":"orbital",
    "flight_type":"Direct",
-   "damage":2500,
-   "splash_damage":2500,
-   "splash_radius":20,
-   "full_damage_splash_radius":2,
+   "damage":6000,
+   "splash_damage":0,
+   "splash_radius":0,
    "initial_velocity":1000.0,
    "max_velocity":1000.0,
    "lifetime":3,
@@ -14,7 +13,7 @@
    },
    "fx_trail":{
       "filename":"/pa/units/orbital/orbital_laser/orbital_laser_proj_trail.pfx",
-      "effect_scale":2
+      "effect_scale":6
    },
    "events":{
       "died":{
