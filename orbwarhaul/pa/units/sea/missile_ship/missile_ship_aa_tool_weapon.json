@@ -1,0 +1,1 @@
+{"base_spec":"/pa/tools/base_turret/base_turret.json","ammo_id":"/pa/units/sea/missile_ship/missile_ship_aa_ammo.json","rate_of_fire":4,"max_range":150,"yaw_rate":0,"pitch_rate":0,"yaw_range":0,"pitch_range":0,"firing_arc_yaw":360,"firing_arc_pitch":360,"spread_fire":true,"auto_attack":true,"target_layers":["WL_Air"]}
