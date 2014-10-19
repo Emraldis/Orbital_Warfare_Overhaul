@@ -6,5 +6,5 @@
    "initial_velocity": 300.0,
    "lifetime": 4,
    "max_velocity": 300.0,
-   "turn_rate": 360,
+   "turn_rate": 360
 }

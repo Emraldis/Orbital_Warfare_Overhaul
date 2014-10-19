@@ -35,15 +35,12 @@
 		"type": "orbital",
 		"acceleration": 70,
 		"brake": 70,
-		"move_speed": 100,
+		"move_speed": 80,
 		"turn_speed": 180,
 		"dodge_radius": 15,
 		"dodge_multiplier": 3.0,
 		"aggressive_distance": 50.0,
-		"aggressive_Height": 1.0,
 		"aggressive_behavior": "line",
-		"wobble_factor": 1.0,
-		"wobble_speed": 1.0,
 		"hover_time": 5.0,
 		"bank_factor": 10,
 		"vertical_speed": 200
@@ -60,13 +57,13 @@
                "layer":"orbital",
                "channel":"sight",
                "shape":"sphere",
-               "radius":250
+               "radius":200
             },
 			{
 				"layer": "surface_and_air",
 				"channel": "sight",
 				"shape": "capsule",
-				"radius": 150
+				"radius": 50
 			}
          ]
       }
