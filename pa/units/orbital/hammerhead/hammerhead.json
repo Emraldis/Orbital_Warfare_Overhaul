@@ -2,8 +2,8 @@
    "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
    "display_name":"Hammerhead",
    "description":"Anti Fighter Escort",
-   "max_health":5000,
-   "build_metal_cost":4800,
+   "max_health":7200,
+   "build_metal_cost":3600,
    "unit_types":[
       "UNITTYPE_Fighter",
       "UNITTYPE_Orbital",
@@ -28,8 +28,6 @@
       "brake":30,
       "move_speed":40,
       "turn_speed":40,
-      "aggressive_distance":75.0,
-      "aggressive_behavior":"line",
       "bank_factor":5,
       "vertical_speed":300
    },

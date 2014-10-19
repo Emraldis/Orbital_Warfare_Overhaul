@@ -12,6 +12,6 @@
 	"spread_fire": true,
     "firing_arc_yaw":180,
     "firing_arc_pitch":180,
-	"target_layers": [
-	"WL_Air"]
+	"target_layers": ["WL_Air"],
+	"target_priorities":["Air"]
 }

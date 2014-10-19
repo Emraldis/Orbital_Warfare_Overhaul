@@ -2,8 +2,8 @@
    "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
    "display_name":"Excalibur",
    "description":"Long-range orbital structure assault",
-   "max_health":1000,
-   "build_metal_cost":4400,
+   "max_health":4800,
+   "build_metal_cost":4800,
    "unit_types":[
       "UNITTYPE_Fighter",
       "UNITTYPE_Orbital",
@@ -24,13 +24,11 @@
    ],
    "navigation":{
       "type":"orbital",
-      "acceleration":30,
-      "brake":30,
-      "move_speed":40,
-      "turn_speed":40,
-      "aggressive_distance":75.0,
-      "aggressive_behavior":"line",
-      "bank_factor":5,
+      "acceleration":25,
+      "brake":25,
+      "move_speed":30,
+      "turn_speed":50,
+	  "bank_factor":5,
       "vertical_speed":300
    },
    "physics":{
