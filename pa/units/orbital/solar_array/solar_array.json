@@ -2,7 +2,7 @@
    "base_spec":"/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
    "display_name":"!LOC(units:solar_array.message):Solar Array",
    "description":"!LOC(units:manufacturing_orbital_energy_generation.message):Manufacturing- Orbital energy generation.",
-   "max_health":2500,
+   "max_health":3800,
    "build_metal_cost":3000,
    "spawn_layers":"WL_Orbital",
    "attachable":{

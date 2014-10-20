@@ -3,7 +3,7 @@
    "display_name":"Hailfire Missile Barge",
    "description":"Mobile anti-surface missile launcher",
    "max_health":7200,
-   "build_metal_cost":3600,
+   "build_metal_cost":6200,
    "unit_types":[
       "UNITTYPE_Fighter",
       "UNITTYPE_Orbital",
@@ -26,8 +26,8 @@
       "type":"orbital",
       "acceleration":30,
       "brake":30,
-      "move_speed":40,
-      "turn_speed":40,
+      "move_speed":25,
+      "turn_speed":25,
       "bank_factor":5,
       "vertical_speed":300
    },
@@ -44,6 +44,12 @@
                "channel":"sight",
                "shape":"sphere",
                "radius":400
+            },
+			{
+               "layer":"surface_and_air",
+               "channel":"radar",
+               "shape":"capsule",
+               "radius":250
             }
          ]
       }

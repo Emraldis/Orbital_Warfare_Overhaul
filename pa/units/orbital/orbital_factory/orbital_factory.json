@@ -2,7 +2,7 @@
    "base_spec":"/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
    "display_name":"!LOC(units:orbital_factory.message):Orbital Factory",
    "description":"!LOC(units:advanced_manufacturing_builds_orbital_satellites.message):Advanced manufacturing- Builds orbital satellites.",
-   "max_health":15000,
+   "max_health":19500,
    "build_metal_cost":5400,
    "atrophy_rate":90.0,
    "atrophy_cool_down":15.0,

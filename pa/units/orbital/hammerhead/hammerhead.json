@@ -2,7 +2,7 @@
    "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
    "display_name":"Hammerhead",
    "description":"Anti Fighter Escort",
-   "max_health":7200,
+   "max_health":9300,
    "build_metal_cost":3600,
    "unit_types":[
       "UNITTYPE_Fighter",

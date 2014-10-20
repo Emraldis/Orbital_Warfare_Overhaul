@@ -1,18 +1,21 @@
 {
    "base_spec":"/pa/tools/base_fighter_turret/base_fighter_turret.json",
    "ammo_id":"/pa/units/orbital/hailfire/hailfire_ammo.json",
-   "rate_of_fire":2.5,
+   "rate_of_fire":0.2,
    "max_range":200,
-   "yaw_range":150,
-   "pitch_range":45,
+   "yaw_range":270,
+   "pitch_range":360,
    "firing_arc_yaw":150,
    "firing_arc_pitch":150,
    "auto_attack":true,
    "height_range":400,
    "target_layers":[
-      "WL_Orbital"
+      "WL_LandHorizontal",
+	  "WL_Orbital",
+      "WL_WaterSurface",
+	  "WL_Air"
    ],
    "target_priorities":[
-      "Orbital"
+      "LandHorizontal", "Air"
    ]
 }
