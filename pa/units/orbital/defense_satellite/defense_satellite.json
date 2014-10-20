@@ -1,9 +1,9 @@
 {
    "base_spec":"/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-   "display_name":"Sentinel",
-   "description":"Stationary anti-surface defense structure.",
-   "max_health":5600,
-   "build_metal_cost":3200,
+   "display_name":"!LOC(units:anchor.message):Anchor",
+   "description":"!LOC(units:defense_satellite_heavy_orbital_offensive_and_defensive_platform_with_basic_laser.message):Defense satellite- Heavy orbital offensive and defensive platform with basic laser.",
+   "max_health":6000,
+   "build_metal_cost":2500,
    "atrophy_rate":60,
    "atrophy_cool_down":15.0,
    "spawn_layers":"WL_Orbital",
@@ -43,12 +43,6 @@
       "observer":{
          "items":[
             {
-               "layer":"surface_and_air",
-               "channel":"radar",
-               "shape":"capsule",
-               "radius":100
-            },
-            {
                "layer":"orbital",
                "channel":"sight",
                "shape":"sphere",
@@ -59,13 +53,29 @@
    },
    "tools":[
       {
-         "spec_id":"/pa/units/orbital/sentinel/sentinel_tool_weapon.json",
-         "aim_bone":"bone_fire01",
-         "muzzle_bone":"bone_fire01"
+         "spec_id":"/pa/units/orbital/defense_satellite/defense_satellite_tool_weapon.json",
+         "aim_bone":"bone_turret01",
+         "muzzle_bone":"bone_turret01"
+      },
+      {
+         "spec_id":"/pa/units/orbital/defense_satellite/defense_satellite_tool_weapon.json",
+         "aim_bone":"bone_turret02",
+         "muzzle_bone":"bone_turret02"
+      },
+      {
+         "spec_id":"/pa/units/orbital/defense_satellite/defense_satellite_tool_weapon.json",
+         "aim_bone":"bone_turret03",
+         "muzzle_bone":"bone_turret03"
+      },
+      {
+         "spec_id":"/pa/units/orbital/defense_satellite/defense_satellite_tool_weapon.json",
+         "aim_bone":"bone_turret04",
+         "muzzle_bone":"bone_turret04"
       }
    ],
    "model":{
-      "filename":"/pa/units/orbital/sentinel/sentinel.papa"
+      "filename":"/pa/units/orbital/defense_satellite/defense_satellite.papa",
+      "animtree":"/pa/anim/anim_trees/defense_satellite_anim_tree.json"
    },
    "events":{
       "build_complete":{
@@ -79,9 +89,9 @@
       }
    },
    "mesh_bounds":[
-      25.1,
-      19.6,
-      23.4
+      23,
+      23,
+      6
    ],
    "placement_size":[
       50,
