@@ -15,5 +15,8 @@
       "WL_LandHorizontal",
 	  "WL_Orbital",
       "WL_WaterSurface"
+   ],
+      "target_priorities":[
+      "Orbital"
    ]
 }

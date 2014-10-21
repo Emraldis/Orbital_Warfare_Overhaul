@@ -11,7 +11,6 @@
    "height_range":400,
    "target_layers":[
       "WL_LandHorizontal",
-	  "WL_Orbital",
       "WL_WaterSurface",
 	  "WL_Air"
    ],
