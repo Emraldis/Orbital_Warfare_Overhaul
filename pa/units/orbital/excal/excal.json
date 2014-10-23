@@ -57,11 +57,6 @@
          "spec_id":"/pa/units/orbital/excal/excal_tool_weapon.json",
          "aim_bone":"bone_fire01",
          "muzzle_bone":"bone_fire01"
-      },
-      {
-         "spec_id":"/pa/units/orbital/excal/excal_tool_weapon.json",
-         "aim_bone":"bone_fire02",
-         "muzzle_bone":"bone_fire02"
       }
    ],
    "events":{
@@ -94,16 +89,25 @@
          "type":"moving_forward",
          "filename":"/pa/units/air/fighter/fighter_jets.pfx",
          "offset":[
-            0,
-            2.9,
-            0.836
+            7.8,
+            16.9,
+            0.2764
+         ]
+      },
+	        {
+         "type":"moving_forward",
+         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "offset":[
+            -7.8,
+            16.9,
+            0.2764
          ]
       }
    ],
    "TEMP_texelinfo":6.1803,
    "mesh_bounds":[
-      22.8,
-      46.9,
-      11.0
+      22.0,
+      54.82,
+      13.6
    ]
 }
