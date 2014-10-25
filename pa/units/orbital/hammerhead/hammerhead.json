@@ -55,23 +55,13 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
-         "aim_bone":"bone_pitch01",
+         "aim_bone":"bone_fire01",
          "muzzle_bone":"bone_fire01"
       },
       {
          "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
-         "aim_bone":"bone_pitch02",
+         "aim_bone":"bone_fire02",
          "muzzle_bone":"bone_fire02"
-      },
-      {
-         "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
-         "aim_bone":"bone_pitch03",
-         "muzzle_bone":"bone_fire03"
-      },
-      {
-         "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
-         "aim_bone":"bone_pitch04",
-         "muzzle_bone":"bone_fire04"
       }
    ],
    "events":{
@@ -104,16 +94,25 @@
          "type":"moving_forward",
          "filename":"/pa/units/air/fighter/fighter_jets.pfx",
          "offset":[
-            0,
-            2.9,
-            0.836
+            9.0,
+            18.5,
+            -1.32
+         ]
+      },
+	  {
+         "type":"moving_forward",
+         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "offset":[
+            -9.0,
+            18.5,
+            -1.32
          ]
       }
    ],
    "TEMP_texelinfo":6.1803,
    "mesh_bounds":[
-      22.8,
-      46.9,
-      11.0
+      25.9,
+      39.2,
+      8.1
    ]
 }

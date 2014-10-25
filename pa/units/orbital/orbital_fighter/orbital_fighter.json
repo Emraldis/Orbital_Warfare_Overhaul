@@ -3,7 +3,7 @@
 "display_name": "!LOC(units:avenger.message):Avenger",
 "description": "!LOC(units:orbital_fighter_fast_moving_orbital_fighter_for_offense_and_defense.message):Orbital fighter- Fast moving orbital fighter for offense and defense.",
 "build_metal_cost": 400,
-"max_health": 325,
+"max_health": 400,
 "gravwell_velocity_multiplier": 12,
 "wreckage_health_frac": 0,
 "spawn_layers": "WL_Orbital",
