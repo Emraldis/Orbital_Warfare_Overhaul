@@ -52,6 +52,7 @@
       "filename":"/pa/units/orbital/hammerhead/hammerhead.papa",
       "arrows":5
    },
+   "nearby_target_tick_update_interval":15,
    "tools":[
       {
          "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
@@ -92,20 +93,42 @@
    "fx_offsets":[
       {
          "type":"moving_forward",
-         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
          "offset":[
             9.0,
             18.5,
-            -1.32
+            -0.42
          ]
       },
 	  {
          "type":"moving_forward",
-         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
          "offset":[
             -9.0,
             18.5,
-            -1.32
+            -0.42
+         ]
+      },
+      {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
+         "offset":[
+            9.0,
+            18.5,
+            -1.92
+         ]
+      },
+	  {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
+         "offset":[
+            -9.0,
+            18.5,
+            -1.92
          ]
       }
    ],

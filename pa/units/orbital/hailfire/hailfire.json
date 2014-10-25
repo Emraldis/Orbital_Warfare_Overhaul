@@ -45,17 +45,11 @@
                "shape":"sphere",
                "radius":250
             },
-			{
-               "layer":"surface_and_air",
-               "channel":"sight",
-               "shape":"capsule",
-               "radius":200
-            },
-			{
+            {
                "layer":"surface_and_air",
                "channel":"radar",
                "shape":"capsule",
-               "radius":250
+               "radius":350
             }
          ]
       }
@@ -69,9 +63,18 @@
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
          "aim_bone":"bone_pitch01",
          "muzzle_bone":"bone_fire01"
+      },{
+         "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
+         "aim_bone":"bone_pitch01",
+         "muzzle_bone":"bone_fire01"
       },
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
+         "aim_bone":"bone_pitch02",
+         "muzzle_bone":"bone_fire02"
+      },
+	  {
+         "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
          "aim_bone":"bone_pitch02",
          "muzzle_bone":"bone_fire02"
       }

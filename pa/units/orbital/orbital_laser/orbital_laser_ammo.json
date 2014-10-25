@@ -5,7 +5,7 @@
    "damage":20000,
    "splash_damage":20000,
    "splash_radius":80,
-   "armor_damage_map":{"AT_Commander":0.0},
+   "armor_damage_map":{"AT_Commander":0.5},
    "initial_velocity":500.0,
    "max_velocity":500.0,
    "lifetime":6,

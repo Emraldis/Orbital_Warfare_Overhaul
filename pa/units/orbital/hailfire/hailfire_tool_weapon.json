@@ -11,10 +11,9 @@
    "height_range":400,
    "target_layers":[
       "WL_LandHorizontal",
-      "WL_WaterSurface",
-	  "WL_Air"
+      "WL_WaterSurface"
    ],
    "target_priorities":[
-      "LandHorizontal", "Air"
+      "LandHorizontal"
    ]
 }

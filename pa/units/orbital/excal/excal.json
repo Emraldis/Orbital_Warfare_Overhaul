@@ -87,20 +87,42 @@
    "fx_offsets":[
       {
          "type":"moving_forward",
-         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
          "offset":[
             7.8,
             16.9,
-            0.2764
+            0.6764
+         ]
+      },
+	  {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
+         "offset":[
+            7.8,
+            16.9,
+            -0.6764
+         ]
+      },
+	  {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
+         "offset":[
+            -7.8,
+            16.9,
+            -0.6764
          ]
       },
 	        {
          "type":"moving_forward",
-         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+		 "effect_scale":5,
          "offset":[
             -7.8,
             16.9,
-            0.2764
+            0.6764
          ]
       }
    ],
