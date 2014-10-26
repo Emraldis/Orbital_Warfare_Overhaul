@@ -61,8 +61,8 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
-         "aim_bone":"bone_pitch01",
-         "muzzle_bone":"bone_fire01"
+         "aim_bone":"bone_pitch03",
+         "muzzle_bone":"bone_fire03"
       },{
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
          "aim_bone":"bone_pitch01",
@@ -70,8 +70,8 @@
       },
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
-         "aim_bone":"bone_pitch02",
-         "muzzle_bone":"bone_fire02"
+         "aim_bone":"bone_pitch04",
+         "muzzle_bone":"bone_fire04"
       },
 	  {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
@@ -107,18 +107,43 @@
    "fx_offsets":[
       {
          "type":"moving_forward",
-         "filename":"/pa/units/air/fighter/fighter_jets.pfx",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
          "offset":[
-            0,
-            2.9,
-            0.836
+            6.1,
+            21.7,
+            -4.0
+         ]
+      },
+	        {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+         "offset":[
+            4.9,
+            21.7,
+            -4.0
+         ]
+      },      {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+         "offset":[
+            -6.1,
+            21.7,
+            -4.0
+         ]
+      },      {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
+         "offset":[
+            -4.9,
+            21.7,
+            -4.0
          ]
       }
    ],
    "TEMP_texelinfo":6.1803,
    "mesh_bounds":[
-      27.9,
-      56.0,
-      13.7
+      17.3,
+      45.0,
+      11.4
    ]
 }
