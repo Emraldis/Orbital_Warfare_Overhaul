@@ -111,7 +111,12 @@ $(document).ready(function () {
             'transport',
             'control_module',
             'control_point',
-            'mining_platform'
+            'mining_platform',
+			'excal',
+			'hammerhead',
+			'hailfire',
+			'sentinel',
+			'missile_platform'
 
         ]);
 
