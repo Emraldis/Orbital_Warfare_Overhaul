@@ -61,18 +61,18 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
-         "fire_event":"fired1",
+         "fire_event":"fired3",
          "aim_bone":"bone_pitch03",
          "muzzle_bone":"bone_fire03"
       },{
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
-         "fire_event":"fired2",
+         "fire_event":"fired1",
          "aim_bone":"bone_pitch01",
          "muzzle_bone":"bone_fire01"
       },
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
-         "fire_event":"fired1",
+         "fire_event":"fired4",
          "aim_bone":"bone_pitch04",
          "muzzle_bone":"bone_fire04"
       },
@@ -89,11 +89,19 @@
       },
       "fired1":{
          "audio_cue":"/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-         "effect_spec":"/pa/units/orbital/hailfire/hailfire_missile_launch.pfx"
+         "effect_spec":"/pa/units/orbital/hailfire/hailfire_missile_launch.pfx bone_fire01"
       },
       "fired2":{
          "audio_cue":"/SE/Weapons/air/fighter_fire",
-         "effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx"
+         "effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx bone_fire02"
+      },
+      "fired3":{
+         "audio_cue":"/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+         "effect_spec":"/pa/units/orbital/hailfire/hailfire_missile_launch.pfx bone_fire03"
+      },
+      "fired4":{
+         "audio_cue":"/SE/Weapons/air/fighter_fire",
+         "effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx bone_fire04"
       },
       "died":{
          "audio_cue":"/SE/Death/Air",
