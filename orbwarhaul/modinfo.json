@@ -11,11 +11,12 @@
         "server-mod"
     ],
   "author": "emraldis/Darksteel, Nicb1, mgmetal13",
-  "version": "0.05",
+  "version": "ALPHA 0.100",
   "signature": "(not yet implemented)",
   "forum": "https://forums.uberent.com/threads/wip-server-orbital-warfare-overhaul.62878/",
   "icon": "",
   "priority": 100,
   "dependencies": [
+	"com.pa.owo.icons"
   ]  
 }

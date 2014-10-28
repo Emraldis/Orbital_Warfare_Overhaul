@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+	"context": "client",
+    "identifier": "com.pa.owo.icons",
+    "display_name": "Orbital Warfare Overhaul Strategic Icons",
+    "description": "Orbital Warfare Overhaul Strategic Icons",
+    "author": "Emraldis/Darksteel, Nicb1, mgmetal13",
+    "version": "0.1",
+    "signature": "not yet implemented",
+    "priority": 100,
+    "enabled": true,
+    "id": "owoicons",
+    "icon": "",
+    "forum": "https://forums.uberent.com/threads/wip-server-orbital-warfare-overhaul.62878/",
+    "category": [
+	    "in-game",
+        "client-mod",
+        "Strategic Icons"
+    ],
+    "date": "2014/10/27",
+    "build": "72332"
+}
