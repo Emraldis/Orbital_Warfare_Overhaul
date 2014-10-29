@@ -6,6 +6,7 @@
    "build_metal_cost":3600,
    "unit_types":[
       "UNITTYPE_Fighter",
+      "UNITTYPE_OrbitalDefense",
       "UNITTYPE_Orbital",
       "UNITTYPE_Mobile",
       "UNITTYPE_Offense",

@@ -5,7 +5,8 @@
    "max_health":8400,
    "build_metal_cost":8200,
    "unit_types":[
-      "UNITTYPE_Fighter",
+      "UNITTYPE_AirDefense",
+      "UNITTYPE_Artillery",
       "UNITTYPE_Orbital",
       "UNITTYPE_Mobile",
       "UNITTYPE_Offense",
@@ -50,6 +51,12 @@
                "channel":"radar",
                "shape":"capsule",
                "radius":350
+            },
+			{
+               "layer":"surface_and_air",
+               "channel":"sight",
+               "shape":"capsule",
+               "radius":200
             }
          ]
       }
