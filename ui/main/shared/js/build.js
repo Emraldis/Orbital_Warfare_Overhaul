@@ -72,6 +72,7 @@ function BuildHotkeyModel() {
             "/pa/units/orbital/orbital_fighter/orbital_fighter.json": ["orbital units", 11],
             "/pa/units/orbital/radar_satellite/radar_satellite.json": ["orbital units", 12],
             "/pa/units/orbital/orbital_lander/orbital_lander.json": ["orbital units", 13],
+			"/pa/units/orbital/wraith/wraith.json": ["orbital units", 20],
 			
             "/pa/units/orbital/solar_array/solar_array.json": ["orbital structures", 5],
 			"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital structures", 6],

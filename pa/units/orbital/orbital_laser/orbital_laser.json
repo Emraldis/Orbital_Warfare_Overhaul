@@ -1,11 +1,11 @@
 {
    "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
    "display_name":"!LOC(units:sxx_1304_laser_platform.message):SXX-1304 Laser Platform",
-   "description":"!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
+   "description":"!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Useful against structures and large clumps of units.",
    "max_health":2800,
    "build_metal_cost":33000,
    "spawn_layers":"WL_Orbital",
-   "gravwell_velocity_multiplier":6.0,
+   "gravwell_velocity_multiplier":4.0,
    "attachable":{
       "offsets":{
          "root":[

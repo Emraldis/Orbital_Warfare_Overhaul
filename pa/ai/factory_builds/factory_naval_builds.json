@@ -1,0 +1,150 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Fabber & Basic",
+            "value0": 2
+          },
+          {
+            "string0": "BasicNavalFabber",
+            "test_type": "CanAffordPotentialDrain"
+          }
+        ]
+      ],
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "name": "Basic Naval Fabber",
+      "priority": 100,
+      "to_build": "BasicNavalFabber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Destroyer",
+      "priority": 97,
+      "to_build": "Destroyer"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Frigate",
+      "priority": 97,
+      "to_build": "Frigate"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Fabber & Advanced",
+            "value0": 2
+          },
+          {
+            "string0": "AdvancedAirFabber",
+            "test_type": "CanAffordPotentialDrain"
+          }
+        ]
+      ],
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 15,
+      "name": "Advanced Naval Fabber",
+      "priority": 200,
+      "to_build": "AdvancedNavalFabber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Battleship",
+      "priority": 199,
+      "to_build": "Battleship"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "MissleShip",
+      "priority": 199,
+      "to_build": "MissleShip"
+    }
+  ]
+}
