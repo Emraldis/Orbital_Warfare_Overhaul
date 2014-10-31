@@ -50,13 +50,13 @@
                "layer":"surface_and_air",
                "channel":"radar",
                "shape":"capsule",
-               "radius":350
+               "radius":210
             },
 			{
                "layer":"surface_and_air",
                "channel":"sight",
                "shape":"capsule",
-               "radius":200
+               "radius":100
             }
          ]
       }

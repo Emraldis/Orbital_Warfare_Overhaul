@@ -34,7 +34,7 @@
 		"type": "orbital",
 		"acceleration": 5,
 		"brake": 5,
-		"move_speed": 25,
+		"move_speed": 19,
 		"turn_speed": 90,
 		"hover_time": -1.0
    },

@@ -1,0 +1,257 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Tactical",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "string0": "Enemy",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "value0": 500,
+            "value1": 5
+          },
+          {
+            "string0": "TML",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "TML",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        },
+        "unit_count_rules": [
+          {
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "count": 5,
+            "range": 400,
+            "unit_type_string": "Structure"
+          }
+        ]
+      },
+      "priority": 350,
+      "to_build": "TML"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "string0": "NukeSilo",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "value0": 5
+          },
+          {
+            "compare0": ">",
+            "string0": "Economy",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "string0": "NukeSilo",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "name": "Nuke Silo",
+      "placement_rules": {
+        "buffer": 2
+      },
+      "priority": 360,
+      "shared_instance_count": "NukeSilo",
+      "to_build": "NukeSilo"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "value0": 10
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "string0": "Economy",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "string0": "NukeSilo",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "name": "Nuke Silo - Alone",
+      "placement_rules": {
+        "buffer": 2
+      },
+      "priority": 508,
+      "shared_instance_count": "NukeSilo",
+      "to_build": "NukeSilo"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Advanced",
+            "value0": 3
+          },
+          {
+            "string0": "NukeSilo",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": ">",
+            "string0": "Economy",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<=",
+            "string0": "AntiNuke",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "string0": "NukeSilo",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 12,
+      "min_num_assisters": 5,
+      "name": "Nuke Silo - No Antis",
+      "placement_rules": {
+        "buffer": 2
+      },
+      "priority": 477,
+      "shared_instance_count": "NukeSilo",
+      "to_build": "NukeSilo"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "string0": "Enemy",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "value0": 600,
+            "value1": 5
+          },
+          {
+            "string0": "LongRangeArtillery",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 6,
+      "min_num_assisters": 3,
+      "name": "Long Range Artillery",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        },
+        "unit_count_rules": [
+          {
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "count": 5,
+            "range": 500,
+            "unit_type_string": "Structure"
+          }
+        ]
+      },
+      "priority": 360,
+      "to_build": "LongRangeArtillery"
+    }
+  ]
+}
