@@ -1,7 +1,7 @@
 {
    "base_spec":"/pa/tools/base_fighter_turret/base_fighter_turret.json",
    "ammo_id":"/pa/units/orbital/hailfire/hailfire_ammo.json",
-   "rate_of_fire":0.25,
+   "rate_of_fire":0.2,
    "max_range":200,
    "yaw_range":270,
    "pitch_range":360,

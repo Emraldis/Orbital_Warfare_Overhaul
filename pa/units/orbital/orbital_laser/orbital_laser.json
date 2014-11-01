@@ -3,7 +3,7 @@
    "display_name":"!LOC(units:sxx_1304_laser_platform.message):SXX-1304 Laser Platform",
    "description":"!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Useful against structures and large clumps of units.",
    "max_health":2800,
-   "build_metal_cost":33000,
+   "build_metal_cost":43000,
    "spawn_layers":"WL_Orbital",
    "gravwell_velocity_multiplier":4.0,
    "attachable":{
@@ -34,7 +34,7 @@
 		"type": "orbital",
 		"acceleration": 5,
 		"brake": 5,
-		"move_speed": 25,
+		"move_speed": 20,
 		"turn_speed": 90,
 		"hover_time": -1.0
    },
