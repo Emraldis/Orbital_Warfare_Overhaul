@@ -1,7 +1,7 @@
 {
    "base_spec":"/pa/units/land/base_structure/base_structure.json",
    "display_name":"!LOC(units:catapult.message):Catapult",
-   "description":"!LOC(units:tactical_missile_launcher_equipped_with_advanced_long_range_anti_land_missile_launcher.message):Tactical missile launcher- Equipped with advanced long range anti-land missile launcher.",
+   "description":"!LOC(units:tactical_missile_launcher_equipped_with_advanced_long_range_anti_land_missile_launcher.message):Tactical missile launcher- Equipped with advanced long range anti-land anti-orbital missile launcher.",
    "max_health":1500,
    "build_metal_cost":1800,
    "atrophy_rate":30.0,

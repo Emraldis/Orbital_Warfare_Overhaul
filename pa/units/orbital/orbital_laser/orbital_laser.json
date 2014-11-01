@@ -5,6 +5,7 @@
    "max_health":2800,
    "build_metal_cost":33000,
    "spawn_layers":"WL_Orbital",
+   "planetary_arrival_cooldown_time": 5,
    "gravwell_velocity_multiplier":4.0,
    "attachable":{
       "offsets":{
