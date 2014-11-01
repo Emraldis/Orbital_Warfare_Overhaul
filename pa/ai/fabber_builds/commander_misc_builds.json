@@ -1,0 +1,79 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Transport",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "Commander"
+      ],
+      "instance_count": 1,
+      "name": "Move Commander To Planet",
+      "priority": 1000,
+      "task_type": "TransportToPlanet"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "test_type": "WantCommanderOffPlanetByTeleporter"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "Commander"
+      ],
+      "instance_count": 1,
+      "name": "Teleport Commander To Planet",
+      "priority": 1001,
+      "task_type": "TeleportFabberToPlanet"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "test_type": "NoWhereToRun"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Transport",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "Commander"
+      ],
+      "instance_count": 1,
+      "name": "Commander Give Up",
+      "priority": 0,
+      "task_type": "GiveUp"
+    }
+  ]
+}

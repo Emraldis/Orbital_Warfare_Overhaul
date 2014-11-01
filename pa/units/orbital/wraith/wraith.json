@@ -85,6 +85,11 @@
             "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json",
             "aim_bone": "bone_body",
             "muzzle_bone": "bone_recoil01"
+        },
+        {
+            "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json",
+            "aim_bone": "bone_body",
+            "muzzle_bone": "bone_recoil01"
         }
     ],
     "fx_offsets": [

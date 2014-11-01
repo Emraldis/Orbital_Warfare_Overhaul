@@ -1,0 +1,286 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicAirFabber"
+          },
+          {
+            "string0": "BasicAirFabber",
+            "test_type": "CanAffordPotentialDrain"
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic",
+            "value0": 2
+          }
+        ]
+      ],
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "name": "Basic Air Fabber",
+      "priority": 100,
+      "to_build": "BasicAirFabber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "value0": 200
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "value0": 1
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ]
+      ],
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "instance_count": 1,
+      "name": "Air Scout",
+      "priority": 98,
+      "to_build": "AirScout"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fighter & Basic",
+            "value0": 50
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fighter",
+            "value0": 20
+          }
+        ],
+        [
+          {
+            "compare0": ">",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "test_type": "BaseThreatRatio",
+            "value0": 1.0
+          }
+        ]
+      ],
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Basic Air Fighter",
+      "priority": 97,
+      "to_build": "BasicFighter"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bomber",
+            "value0": 20
+          }
+        ]
+      ],
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Basic Air Bomber",
+      "priority": 97,
+      "to_build": "BasicBomber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedAdvancedAirFabber"
+          },
+          {
+            "string0": "AdvancedAirFabber",
+            "test_type": "CanAffordPotentialDrain"
+          }
+        ],
+        [
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 15,
+      "name": "Advanced Air Fabber",
+      "priority": 200,
+      "to_build": "AdvancedAirFabber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bomber",
+            "value0": 20
+          }
+        ]
+      ],
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Advanced Air Bomber",
+      "priority": 199,
+      "to_build": "AdvancedBomber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Gunship",
+            "value0": 20
+          }
+        ]
+      ],
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Advanced Gunship",
+      "priority": 199,
+      "to_build": "AdvancedGunship"
+    }
+  ]
+}

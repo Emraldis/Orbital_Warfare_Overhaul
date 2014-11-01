@@ -1,0 +1,403 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": false,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory &amp; Advanced) - Orbital - Nuke - NukeDefense",
+            "value0": 1
+          },
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyBasicFabber",
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 3,
+      "name": "Orbital Launcher",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 479,
+      "shared_instance_count": "OrbitalLauncher",
+      "to_build": "OrbitalLauncher"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "compare0": "&lt;",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital &amp; Factory &amp; Land",
+            "value0": 1
+          },
+          {
+            "string0": "OrbitalLauncher",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyBasicFabber",
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Orbital Launcher - Rush",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 479,
+      "shared_instance_count": "OrbitalLauncher",
+      "to_build": "OrbitalLauncher"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "string0": "OrbitalFactory",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "NeedOrbitalFactory"
+          },
+          {
+            "string0": "OrbitalFactory",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 3,
+      "name": "Orbital Factory",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 479,
+      "to_build": "OrbitalFactory"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "&gt;",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "&lt;",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital &amp; OrbitalDefense",
+            "value0": 6
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure &amp; ((EnergyProduction &amp; Advanced) | Factory)",
+            "value0": 3
+          },
+          {
+            "string0": "DefenseSatellite",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "instance_count": 1,
+      "name": "Defense Satellite",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": "&lt;",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Orbital &amp; OrbitalDefense"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "DefenseSatellite"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetCanBeUsedAsWeapon"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveThrustToMovePlanet"
+          },
+          {
+            "string0": "PlanetEngine",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 45,
+      "min_num_assisters": 8,
+      "name": "Delta V Engine",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 509,
+      "to_build": "PlanetEngine"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "boolean": false,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "value0": 2
+          },
+          {
+            "compare0": "&gt;=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital &amp; Transport",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "BasicBotFabber",
+        "BasicVehicleFabber",
+        "BasicAirFabber",
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
+      "instance_count": 1,
+      "name": "Move Fabber To Planet",
+      "priority": 800,
+      "task_type": "TransportToPlanet"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "AdvancedRadarSattelite",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "&lt;",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital &amp; Recon &amp; Advanced - Structure",
+            "value0": 250
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "AdvancedRadarSattelite",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "&gt;",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital &amp; Fighter",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetNeedsReconAssistance"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "instance_count": 1,
+      "name": "Advanced Radar Sattelite",
+      "priority": 196,
+      "to_build": "AdvancedRadarSattelite"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "compare0": "&lt;",
+            "test_type": "PotentialEnergyEfficiency",
+            "value0": 1.0
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "instance_count": 1,
+      "name": "Solar Array",
+      "priority": 195,
+      "to_build": "SolarArray"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "compare0": "&lt;",
+            "test_type": "PotentialMetalEfficiency",
+            "value0": 1.0
+          },
+          {
+            "string0": "MiningPlatform",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "instance_count": 1,
+      "name": "Jig",
+      "priority": 195,
+      "to_build": "MiningPlatform"
+    }
+  ]
+}

@@ -21,7 +21,6 @@
       "UNITTYPE_Structure",
       "UNITTYPE_Advanced",
       "UNITTYPE_Recon",
-      "UNITTYPE_FabBuild",
       "UNITTYPE_FabAdvBuild",
       "UNITTYPE_Important"
    ],

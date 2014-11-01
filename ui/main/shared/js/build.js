@@ -28,7 +28,8 @@ function BuildHotkeyModel() {
             "/pa/units/land/bot_factory/bot_factory.json": ["factory", 13],
             "/pa/units/land/vehicle_factory/vehicle_factory.json": ["factory", 14],
 
-            "/pa/units/land/laser_defense_adv/laser_defense_adv.json": ["combat", 0],                   
+            "/pa/units/land/laser_defense_adv/laser_defense_adv.json": ["combat", 0],
+			"/pa/units/land/anti_missile_system/anti_missile_system.json": ["combat", 1],
             "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json": ["combat", 2],
             "/pa/units/land/laser_defense/laser_defense.json": ["combat", 5],
             "/pa/units/land/air_defense_adv/air_defense_adv.json": ["combat", 6],       
@@ -72,7 +73,7 @@ function BuildHotkeyModel() {
             "/pa/units/orbital/orbital_fighter/orbital_fighter.json": ["orbital units", 11],
             "/pa/units/orbital/radar_satellite/radar_satellite.json": ["orbital units", 12],
             "/pa/units/orbital/orbital_lander/orbital_lander.json": ["orbital units", 13],
-			"/pa/units/orbital/wraith/wraith.json": ["orbital units", 20],
+			"/pa/units/orbital/wraith/wraith.json": ["orbital units", 9],
 			
             "/pa/units/orbital/solar_array/solar_array.json": ["orbital structures", 5],
 			"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital structures", 6],

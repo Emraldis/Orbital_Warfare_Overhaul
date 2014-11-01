@@ -63,6 +63,7 @@
         "/pa/units/land/base_structure/base_structure.json",
         "/pa/units/land/base_unit/base_unit.json",
         "/pa/units/land/base_vehicle/base_vehicle.json",
+		"/pa/units/land/anti_missile_system/anti_missile_system.json",
         "/pa/units/land/bot_aa/bot_aa.json",
         "/pa/units/land/bot_bomb/bot_bomb.json",
         "/pa/units/land/bot_factory/bot_factory.json",
