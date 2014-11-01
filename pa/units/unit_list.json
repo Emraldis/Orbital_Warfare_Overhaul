@@ -127,6 +127,7 @@
         "/pa/units/orbital/excal/excal.json",
         "/pa/units/orbital/sentinel/sentinel.json",
         "/pa/units/orbital/missile_platform/missile_platform.json",
+		"/pa/units/orbital/orbital_mine/orbital_mine.json",
         "/pa/units/orbital/hailfire/hailfire.json",
 		"/pa/units/orbital/wraith/wraith.json",
         "/pa/units/sea/attack_sub/attack_sub.json",

@@ -16,6 +16,8 @@ $(document).ready(function () {
             'artillery_long',
             'land_barrier',
             'commander',
+			'anti_missile_system',
+			'wraith',
             'metal_extractor',     
             'metal_extractor_adv',   
             'air_factory_adv',
