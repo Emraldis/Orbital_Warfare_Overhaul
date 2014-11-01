@@ -6,6 +6,9 @@
     "max_health": 400,
     "gravwell_velocity_multiplier": 12,
     "wreckage_health_frac": 0,
+    "consumption":{
+      "energy":1500
+    },
     "spawn_layers": "WL_Orbital",
     "attachable": {
         "offsets": {
@@ -53,7 +56,8 @@
     "recon": {
         "observable": {
             "layer": "orbital",
-            "ignore_radar": true
+            "ignore_radar": true,
+            "uses_energy":true
         },
         "observer": {
             "items": [

@@ -61,6 +61,13 @@
                "shape":"capsule",
                "radius":1200,
                "uses_energy":true
+            },
+			{
+               "layer":"celestial",
+               "channel":"radar",
+               "shape":"sphere",
+               "radius":1,
+               "uses_energy":true
             }
          ]
       }

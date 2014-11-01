@@ -6,10 +6,14 @@
    "build_metal_cost":3000,
    "spawn_layers":"WL_Orbital",
    "area_build_type":"Sphere",
+   "energy_efficiency_requirement":0.5,
    "area_build_separation":50,
    "build_restrictions":"Terrainless",
    "production":{
-      "metal":35
+      "metal":35,
+      "uses_energy":true
+	  
+	  
    },
    "consumption":{
       "energy":2000

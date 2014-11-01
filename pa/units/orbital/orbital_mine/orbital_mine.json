@@ -1,7 +1,7 @@
 {
    "base_spec":"/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-   "display_name":"!LOC(units:land_mine.message):Orbital Mine",
-   "description":"!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Orbital mine- Detonates when enemy units are in proximity.",
+   "display_name":"Orbital Mine",
+   "description":"Orbital mine- Detonates when enemy units are in proximity.",
    "strategic_icon_priority":3,
    "max_health":5,
    "build_metal_cost":50,
