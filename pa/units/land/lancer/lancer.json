@@ -6,6 +6,8 @@
     "build_metal_cost": 9500,
     "atrophy_rate": 240,
     "atrophy_cool_down": 15,
+	"area_build_separation":50,
+	"area_build_type":"Sphere",
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "unit_types": [
         "UNITTYPE_Land",
