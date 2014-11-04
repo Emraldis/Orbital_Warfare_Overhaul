@@ -4,6 +4,7 @@
    "description":"Mobile anti-surface missile launcher",
    "max_health":8400,
    "build_metal_cost":8200,
+   "gravwell_velocity_multiplier":6.0,
    "unit_types":[
       "UNITTYPE_AirDefense",
       "UNITTYPE_Artillery",
@@ -71,23 +72,12 @@
          "fire_event":"fired3",
          "aim_bone":"bone_pitch03",
          "muzzle_bone":"bone_fire03"
-      },{
-         "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
-         "fire_event":"fired1",
-         "aim_bone":"bone_pitch01",
-         "muzzle_bone":"bone_fire01"
       },
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
          "fire_event":"fired4",
          "aim_bone":"bone_pitch04",
          "muzzle_bone":"bone_fire04"
-      },
-	  {
-         "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
-         "fire_event":"fired2",
-         "aim_bone":"bone_pitch02",
-         "muzzle_bone":"bone_fire02"
       }
    ],
    "events":{
