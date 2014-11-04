@@ -1,11 +1,7 @@
 {
    "base_spec":"/pa/tools/base_fighter_turret/base_fighter_turret.json",
    "ammo_id":"/pa/units/orbital/hailfire/hailfire_aa_ammo.json",
-   "ammo_source":"energy",
-   "rate_of_fire":5,
-   "ammo_capacity":1800,
-   "ammo_demand":300,
-   "ammo_per_shot":600,
+   "rate_of_fire":2.5,
    "max_range":200,
    "yaw_rate":3600,
    "pitch_rate":3600,
