@@ -31,7 +31,8 @@
       "move_speed":30,
       "turn_speed":50,
 	  "bank_factor":5,
-      "vertical_speed":300
+      "vertical_speed":300,
+	  "hover_time": -1.0
    },
    "physics":{
       "radius":10,
@@ -66,7 +67,7 @@
          "audio_cue":"/SE/Build_Complete/air"
       },
       "fired":{
-         "audio_cue":"/SE/Weapons/air/fighter_fire"
+            "audio_cue": "/SE/Weapons/structure/artillery_long_fire"
       },
       "died":{
          "audio_cue":"/SE/Death/Air",

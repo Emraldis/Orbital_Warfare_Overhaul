@@ -4,7 +4,7 @@
    "spawn_layers":"orbital",
    "damage":2000,
    "splash_radius":30,
-   "splash_damage":75,
+   "splash_damage":1000,
    "impact_decals":[
       "/pa/effects/specs/scorch_b_01.json"
    ]

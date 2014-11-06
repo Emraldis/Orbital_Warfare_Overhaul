@@ -31,7 +31,8 @@
       "move_speed":40,
       "turn_speed":40,
       "bank_factor":5,
-      "vertical_speed":300
+      "vertical_speed":300,
+	  "hover_time": -1.0
    },
    "physics":{
       "radius":10,
