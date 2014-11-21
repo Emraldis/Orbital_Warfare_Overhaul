@@ -35,20 +35,15 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/artillery_long/artillery_long.papa",
-            "animations": {
-                "aim_up": "/pa/units/land/artillery_long/artillery_long_anim_aimUp.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
+            "filename": "/pa/units/land/lancer/lancer.papa",
+            "animtree": "/pa/anim/anim_trees/rocket_defense_anim_tree.json",
             "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/artillery_long/artillery_long.papa",
-            "animations": {
-                "aim_up": "/pa/units/land/artillery_long/artillery_long_anim_aimUp.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json"
+            "filename": "/pa/units/land/lancer/lancer.papa",
+            "animtree": "/pa/anim/anim_trees/rocket_defense_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
         }
     ],
     "nearby_target_tick_update_interval": 30,
