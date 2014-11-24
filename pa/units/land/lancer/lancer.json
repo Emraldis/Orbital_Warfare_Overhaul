@@ -51,7 +51,7 @@
         {
             "spec_id": "/pa/units/land/lancer/lancer_tool_weapon.json",
             "aim_bone": "socket_aim",
-            "muzzle_bone": "socket_muzzle"
+            "muzzle_bone": "bone_muzzle"
         }
     ],
     "events": {
@@ -60,7 +60,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
         },
         "died": {
             "audio_cue": "/SE/Death/structure_small",

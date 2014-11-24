@@ -35,27 +35,22 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/air_defense_adv/air_defense_adv.papa",
-            "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
+            "filename": "/pa/units/land/anti_missile_system/anti_missile_system.papa",
+            "animtree": "/pa/anim/anim_trees/rocket_defense_anim_tree",
             "skirt_decal": "/pa/effects/specs/skirt_air_defense_adv.json"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/air_defense_adv/air_defense_adv.papa",
-            "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
+            "filename": "/pa/units/sea/anti_missile_system/anti_missile_system.papa",
+            "animtree": "/pa/anim/anim_trees/rocket_defense_anim_tree"
         }
     ],
     "nearby_target_tick_update_interval": 3,
     "tools": [
         {
             "spec_id": "/pa/units/land/anti_missile_system/anti_missile_system_beam_tool_weapon.json",
-            "aim_bone": "bone_pitch",
-            "muzzle_bone": [
-                "socket_rightMuzzle01",
-                "socket_leftMuzzle01",
-                "socket_rightMuzzle02",
-                "socket_leftMuzzle02"
-            ]
+            "aim_bone": "socket_aim",
+            "muzzle_bone": "bone_muzzle"
         }
     ],
     "events": {
@@ -72,9 +67,8 @@
         }
     },
     "mesh_bounds": [
-        7,
-        7,
-        9.4
-    ],
+        10.6,
+        12.6,
+        8.4    ],
     "TEMP_texelinfo": 9.09853
 }
