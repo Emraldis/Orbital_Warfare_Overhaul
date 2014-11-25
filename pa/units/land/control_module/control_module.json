@@ -1,0 +1,183 @@
+{
+  "TEMP_texelinfo": 51.0,
+  "activates_control_point": true,
+  "area_build_type": "Sphere",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 500,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 45000,
+  "description": "!LOC(units:analysis_controls_things_big_things.message):Analysis: Controls things. Big things.",
+  "display_name": "!LOC(units:catalyst.message):Catalyst",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/control_point"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/control_point",
+      "effect_scale": 7.5
+    }
+  },
+  "feature_requirements": [
+    "control_point"
+  ],
+  "feature_snap_ignores_pathability": true,
+  "force_snap_to_feature_orientation": true,
+  "consumption":{
+      "energy":10000
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_rightArm",
+      "filename": "/pa/units/land/control_module/control_module_strobe01.pfx",
+      "offset": [
+        0.35,
+        -112.156,
+        2.578
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_leftArm",
+      "filename": "/pa/units/land/control_module/control_module_strobe02.pfx",
+      "offset": [
+        -0.35,
+        -112.156,
+        2.578
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_conductor02",
+      "filename": "/pa/units/land/control_module/control_module_enabled.pfx",
+      "offset": [
+        0,
+        -63,
+        4
+      ],
+      "type": "idle"
+    }
+  ],
+  "headlights": [
+    {
+      "bone": "bone_rightArm",
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
+      "far_distance": 15.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 5.0,
+      "near_distance": 0.5,
+      "near_height": 1.2,
+      "near_width": 1.0,
+      "offset": [
+        5.688,
+        -75.598,
+        12.0
+      ],
+      "orientation": [
+        0.0,
+        35.0,
+        0.0
+      ]
+    },
+    {
+      "bone": "bone_leftArm",
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
+      "far_distance": 15.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 5.0,
+      "near_distance": 0.5,
+      "near_height": 1.2,
+      "near_width": 1.0,
+      "offset": [
+        -5.688,
+        -75.598,
+        12.0
+      ],
+      "orientation": [
+        0.0,
+        35.0,
+        0.0
+      ]
+    }
+  ],
+  "lamps": [
+    {
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "intensity": 2.0,
+      "offset": [
+        -30.126,
+        -44.99,
+        32.0
+      ],
+      "radius": 4.0
+    },
+    {
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "intensity": 2.0,
+      "offset": [
+        30.126,
+        -44.99,
+        32.0
+      ],
+      "radius": 4.0
+    }
+  ],
+  "max_health": 20000,
+  "mesh_bounds": [
+    80,
+    150,
+    100
+  ],
+  "model": {
+    "animations": {
+      "end": "/pa/units/land/control_module/control_module_anim_end.papa",
+      "loop": "/pa/units/land/control_module/control_module_anim_loop.papa",
+      "start": "/pa/units/land/control_module/control_module_anim_start.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+    "filename": "/pa/units/land/control_module/control_module.papa"
+  },
+  "placement_size": [
+    100,
+    170
+  ],
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air"
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_ControlModule",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important"
+  ]
+}

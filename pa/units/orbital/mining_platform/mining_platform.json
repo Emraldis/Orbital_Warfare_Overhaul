@@ -191,9 +191,10 @@
       "build_complete":{
          "audio_cue":"/SE/Build_Complete/orbital_platform"
       },
-      "died":{
-         "audio_cue":"/SE/Death/orbital",
-         "effect_scale":2.5
+      "died": {
+         "audio_cue": "/SE/Death/orbital",
+         "effect_scale": 1.0,
+         "effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx"
       }
    },
    "mesh_bounds":[
