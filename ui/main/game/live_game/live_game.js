@@ -114,12 +114,12 @@ $(document).ready(function () {
                 }
             }
 
-            if (self.weapon_control() && self.weaponFiring())            
+            if (self.weapon_control() && self.weaponFiring())
                 interlock(annilaseredPlanetSet);
-            
+
             if (self.thrust_control() && self.collisionImminent())
                 interlock(smashedPlanetSet);
-            
+
             if (self.weapon_control() && self.weaponFiring() && self.targetActiveUnderEnemyControl())
                 interlock(annilaseredPlanetUnderEnemyControlSet);
 
@@ -265,7 +265,7 @@ $(document).ready(function () {
                     /* don't target destroyed planets, the source planet, or gas giants */
                     if (element.dead() || element.index() == index || !element.has_terrain())
                         return;
-                    
+
                     var motion = self.actionIsChangeOrbit() || self.actionIsSmashPlanet();
 
                     /* if the target is moving dont' try and chase it */
@@ -275,7 +275,7 @@ $(document).ready(function () {
                     /* larger planets cannont orbit smaller planets */
                     if (self.actionIsChangeOrbit() && element.radius() < source.radius())
                         return;
-                    
+
                     /* dont't try to destroy the sun */
                     if (element.isSun() && !self.actionIsChangeOrbit())
                         return;
@@ -290,9 +290,6 @@ $(document).ready(function () {
         self.sourcePlanetIndex.subscribe(function (value) {
             if (value === -1) {
                 //model.mode('default');
-                api.camera.setAllowZoom(true);
-                api.camera.setAllowPan(true);
-                api.camera.setAllowRoll(true);
 
                 self.targetPlanetIndex(-1);
                 self.selectedPlanetIndex(-1);
@@ -311,9 +308,6 @@ $(document).ready(function () {
                 //model.mode('celestial_control');
                 api.select.empty();
 
-                api.camera.setAllowZoom(false);
-                api.camera.setAllowPan(false);
-                api.camera.setAllowRoll(false);
                 self.generateValidTargetPlanetList(value);
                 api.ar_system.changePlanetSelectionState(self.sourcePlanetIndex.previous(), 'none');
                 api.ar_system.changePlanetSelectionState(value, 'source');
@@ -348,9 +342,6 @@ $(document).ready(function () {
 
                     api.camera.focusPlanet(value);
                     api.camera.setZoom('orbital', false);
-                    api.camera.setAllowZoom(false);
-                    api.camera.setAllowPan(true);
-                    api.camera.setAllowRoll(true);
 
                     api.ar_system.changeSkyboxOverlayColor(1.0, 0.0, 0.0, 0.2);
                     engine.call("holodeck.startRequestInterplanetaryTarget", self.sourcePlanetIndex());
@@ -403,10 +394,6 @@ $(document).ready(function () {
             self.hasSurfaceTarget(false);
             self.requireConfirmation(false);
 
-            api.camera.setAllowZoom(true);
-            api.camera.setAllowPan(true);
-            api.camera.setAllowRoll(true);
-
             api.ar_system.changeSkyboxOverlayColor(0.0, 0.0, 0.0, 0.0);
 
             _.forEach(model.celestialViewModels(), function (element) {
@@ -446,6 +433,12 @@ $(document).ready(function () {
         self.cancelFire = function (index) {
             engine.call('planet.cancelFire', index);
             self.reset();
+        };
+
+        self.cancelControl = function() {
+            self.sourcePlanetIndex(-1);
+            self.reset();
+            model.setMessage('');
         };
 
         self.setTargetPlanet = function (index) {
@@ -508,14 +501,15 @@ $(document).ready(function () {
 
     function GameOptionModel(object) {
         var self = this;
-        self.game_type = ko.observable(object && object.game_type ? object.game_type : '0');
+        self.game_type = ko.observable(object && object.game_type ? object.game_type : 'FreeForAll');
         self.dynamic_alliances = ko.observable(object && object.dynamic_alliances ? object.dynamic_alliances : false);
         self.dynamic_alliance_victory = ko.observable(object && object.dynamic_alliance_victory ? object.dynamic_alliance_victory : false);
         self.land_anywhere = ko.observable(!!(object && object.land_anywhere));
 
-        self.isFFA = ko.computed(function () { return self.game_type() === '0' });
-        self.isTeamArmy = ko.computed(function () { return self.game_type() === '1' });
+        self.isFFA = ko.computed(function () { return self.game_type() === 'FreeForAll' });
+        self.isTeamArmy = ko.computed(function () { return self.game_type() === 'TeamArmies' });
         self.isGalaticWar = ko.computed(function () { return self.game_type() === 'Galactic War' });
+        self.isLadder1v1 = ko.computed(function () { return self.game_type() === 'Ladder1v1' });
     }
 
     function LiveGameViewModel() {
@@ -566,6 +560,10 @@ $(document).ready(function () {
         self.mode = ko.observable('default');
         self.serverMode = ko.observable();
         self.paused = ko.observable(false);
+        self.ranked = ko.observable(false);
+        self.ranked.subscribe(function(newRankedValue) {
+            api.panels.game_paused_panel && api.panels.game_paused_panel.message('ranked', newRankedValue);
+        });
 
         self.allowCustomFormations = ko.observable(false);
         self.toggleCustomFormations = function () { self.allowCustomFormations(!self.allowCustomFormations()); };
@@ -582,6 +580,8 @@ $(document).ready(function () {
             return !!self.uberId();
         });
 
+        self.isLocalGame = ko.observable().extend({ session: 'is_local_game' });
+
         /* the settings panel will query for this */
         self.uberNetRegions = ko.observableArray().extend({ session: 'uber_net_regions' });
 
@@ -592,7 +592,8 @@ $(document).ready(function () {
         self.playerData = ko.computed(function () {
             return {
                 colors: _.pluck(self.players(), 'color'),
-                names: _.pluck(self.players(), 'name')
+                names: _.pluck(self.players(), 'name'),
+                ids: _.pluck(self.players(), 'id')
             };
         });
         self.playerData.subscribe((function () {
@@ -600,8 +601,10 @@ $(document).ready(function () {
 
             return function (value) {
                 var new_hash = JSON.stringify(value);
-                if (hash !== new_hash)
+                if (hash !== new_hash) {
                     api.Panel.message('gamestats', 'player_data', value);
+                    api.Panel.message('unit_alert', 'player_data', value);
+                }
                 hash = new_hash;
             };
         })());
@@ -675,12 +678,13 @@ $(document).ready(function () {
             self.showDefeatPending(true);
         };
         self.showGameComplete = function () {
-        
+
             self.baseGameOverState({
                 game_over: true,
                 defeated: self.originalArmyIndexDefeated(),
                 open: self.showGameOver() || self.showDefeatPending(),
-                auto_show: !(self.gamestatsPanelIsOpen() || self.showTimeControls())
+                auto_show: !(self.gamestatsPanelIsOpen() || self.showTimeControls()),
+                ranked: self.gameOptions.isLadder1v1()
             });
             delayShowGameOver();
         };
@@ -689,16 +693,26 @@ $(document).ready(function () {
         });
 
         self.showSettings = ko.observable(false);
-        self.showSettings.subscribe(function() {
-            var show = self.showSettings();
-            engine.call("game.allowKeyboard", !show);
-            if (show) {
-                api.panels.settings && api.panels.settings.focus();
-            }
-            else {
+        self.showPlayerGuide = ko.observable(false);
+        self.toggleShowPlayerGuide = function () {
+            self.showPlayerGuide(!self.showPlayerGuide());
+        };
+
+        var refreshPanel = function (name, visible) {
+            engine.call("game.allowKeyboard", !visible);
+            if (visible) 
+                api.panels[name] && api.panels[name].focus();
+            else 
                 api.Holodeck.refreshSettings();
-            }
-            _.delay(api.panels.settings.update);
+            
+            _.delay(api.panels[name].update);
+        };
+
+        self.showSettings.subscribe(function() {
+            refreshPanel('settings', self.showSettings());
+        });
+        self.showPlayerGuide.subscribe(function () {
+            refreshPanel('player_guide', self.showPlayerGuide());
         });
 
         // Sandbox
@@ -940,7 +954,7 @@ $(document).ready(function () {
         self.toggleTimeControls = function() {
             self.showTimeControls(!self.showTimeControls());
         };
-        
+
         self.timeBarState = ko.computed(function() {
             return {
                 visible: self.showTimeControls()
@@ -981,10 +995,13 @@ $(document).ready(function () {
 
         self.idleTime = 0;
 
+        self.timedOut = ko.observable(false);
         self.updateIdleTimer = function () {
             self.idleTime += 1;
-            if (self.idleTime >= 120)
+            if (self.idleTime >= 120) {
+                self.timedOut(true);
                 self.navToMainMenu();
+            }
         }
 
         self.showLanding = ko.observable().extend({ session: 'showLanding' });
@@ -1427,11 +1444,30 @@ $(document).ready(function () {
         };
 
         self.abandon = function () {
-            var result = $.Deferred();
-            $.when(self.haveUberNet() && api.net.removePlayerFromGame()).always(function() {
-                result.resolve();
-            });
-            return result.promise();
+            var removeDeferred = $.Deferred();
+            $.when(self.haveUberNet() && api.net.removePlayerFromGame()).always(removeDeferred.resolve);
+
+            if (self.serverMode() !== 'replay') {
+                var surrenderDeferred = $.Deferred();
+                api.select.commander().always(function () {
+                    api.camera.track(true);
+                    self.send_message("surrender", {}, function() {
+                        surrenderDeferred.resolve();
+                    });
+                });
+
+                // Make sure this promise is fulfilled in at least 3 seconds.
+                _.delay(function() {
+                    // Calling reject() after resolve() leaves the promise as resolved,
+                    // *not* rejected, and fail() callbacks are not called. This is
+                    // intended & documented. That makes this fine to do unconditionally.
+                    surrenderDeferred.reject();
+                }, 3000);
+
+                return $.when(removeDeferred, surrenderDeferred);
+            } else {
+                return removeDeferred.promise();
+            }
         }
 
         self.navToGameOptions = function () {
@@ -1447,16 +1483,15 @@ $(document).ready(function () {
             engine.call('pop_mouse_constraint_flag');
             engine.call("game.allowKeyboard", true);
 
-            self.userTriggeredDisconnect(true);
-            self.disconnect();
-
-            self.abandon().then(function () {
+            self.abandon().always(function () {
+                self.userTriggeredDisconnect(true);
+                self.disconnect();
                 window.location.href = self.mainMenuUrl();
             });
         }
 
         self.navToTransit = function () {
-            
+
             engine.call('pop_mouse_constraint_flag');
             engine.call("game.allowKeyboard", true);
 
@@ -1470,9 +1505,9 @@ $(document).ready(function () {
             engine.call('pop_mouse_constraint_flag');
             engine.call("game.allowKeyboard", true);
 
-            self.userTriggeredDisconnect(true);
-            self.disconnect();
-            self.abandon().then(function() {
+            self.abandon().always(function() {
+                self.userTriggeredDisconnect(true);
+                self.disconnect();
                 self.exit();
             });
         }
@@ -1677,6 +1712,7 @@ $(document).ready(function () {
             else
                 remove_keybinds('free camera controls');
         });
+        self.pauseCamera = ko.observable(false);
         self.focusPlanet = ko.observable(0);
         self.focusPlanet.subscribe(function (index) {
             if (self.cameraMode !== 'space')
@@ -1711,6 +1747,30 @@ $(document).ready(function () {
         self.focusPreviousPlanet = function () {
             self.changeFocusPlanet(self.celestialViewModels().length - 2);
         }
+
+        var pauseCameraRule = ko.computed(function() {
+            if (self.pauseCamera()) {
+                api.camera.freeze(true);
+                return;
+            }
+
+            var ccm = self.celestialControlModel;
+
+            if (ccm.targetPlanetIndex() !== -1 && ccm.requireSurfaceTarget()) {
+                api.camera.setAllowZoom(false);
+                api.camera.setAllowPan(true);
+                api.camera.setAllowRoll(true);
+                return;
+            }
+
+            if (ccm.sourcePlanetIndex() !== -1) {
+                api.camera.freeze(true);
+                return;
+            }
+
+            // Fully enable the camera.
+            api.camera.freeze(false);
+        });
         /// End Camera API
 
         /// Unit alert integration
@@ -1835,14 +1895,32 @@ $(document).ready(function () {
             self.showSettings(true);
             self.closeMenu();
         };
+        self.menuSurrender = function() {
+            self.popUp({ message: loc('!LOC(live_game:surrender_game.message):Surrender Game?') }).then(function (result) {
+                if (result === 0) {
+                    self.closeMenu();
+
+                    // Abandoning should take you to the game_over state, but if it fails (times out), we disconnect
+                    // and move you to the main menu. It's probably happening because the server is hanging.
+                    self.abandon().fail(function () {
+                        engine.call('pop_mouse_constraint_flag');
+                        engine.call("game.allowKeyboard", true);
+
+                        self.userTriggeredDisconnect(true);
+                        self.disconnect();
+                        window.location.href = self.mainMenuUrl();
+                    });
+                }
+            });
+        };
         self.menuMainMenu = function() {
-            self.popUp({ message: 'Quit to Main Menu?' }).then(function (result) {
+            self.popUp({ message: loc('!LOC(live_game:quit_to_main_menu.message):Quit to Main Menu?') }).then(function (result) {
                 if (result === 0)
                     self.navToMainMenu();
             });
         };
         self.menuExit = function() {
-            self.popUp({ message: 'Quit and exit to Desktop?' }).then(function (result) {
+            self.popUp({ message: loc('!LOC(live_game:surrender_and_exit_to_desktop.message):Surrender and exit to Desktop?') }).then(function (result) {
                 if (result === 0)
                     self.exitGame();
             });
@@ -1852,35 +1930,56 @@ $(document).ready(function () {
             if (!model.selection())
                 return;
 
-            self.popUp({ message: 'Destroy selected units?' }).then(function (result) {
+            self.popUp({ message: loc('!LOC(live_game:destroy_selected_units.message):Destroy selected units?') }).then(function (result) {
                 if (result === 0)
                     api.unit.selfDestruct();
             });
         };
 
-        self.menuAction = function(action) { self[action](); };
-        self.menuConfig = ko.observableArray([
-            {
-                label: 'Pause Game',
-                action: 'menuPauseGame'
-            },
-            {
-                label: 'Chrono Cam',
-                action: 'menuToggleChronoCam'
-            },
-            {
-                label: 'Game Settings',
-                action: 'menuSettings'
-            },
-            {
-                label: 'Main Menu',
-                action: 'menuMainMenu',
-            },
-            {
-                label: 'Quit',
-                action: 'menuExit'
+        self.menuAction = function (action) { self[action](); };
+
+        /* affected by gw live_game_patch. check patch before changing. */
+        self.menuConfig = ko.computed(function() {
+            var list = [];
+
+            if (!self.ranked()) {
+                list.push({
+                    label: loc('!LOC(live_game:pause_game.message):Pause Game'),
+                    action: 'menuPauseGame'
+                });
             }
-        ]);
+
+            list.push({
+                label: loc('!LOC(live_game:chrono_cam.message):Chrono Cam'),
+                action: 'menuToggleChronoCam'
+            });
+
+            list.push({
+                label: loc('!LOC(live_game:game_settings.message):Game Settings'),
+                action: 'menuSettings'
+            });
+
+            if (self.serverMode() === 'replay') {
+                list.push({
+                    label: loc('!LOC(live_game:main_menu.message):Main Menu'),
+                    action: 'menuMainMenu',
+                });
+            } else {
+                list.push({
+                    label: loc('!LOC(live_game:surrender.message):Surrender'),
+                    action: 'menuSurrender',
+                });
+            }
+
+            if (!self.ranked()) {
+                list.push({
+                    label: loc('!LOC(live_game:quit.message):Quit'),
+                    action: 'menuExit'
+                });
+            }
+
+            return list;
+        });
         ko.computed(function() {
             api.panels.menu && api.panels.menu.query('state', self.menuConfig()).then(api.panels.menu.update());
         });
@@ -1961,7 +2060,8 @@ $(document).ready(function () {
 
             // start periodic update
             setInterval(model.update, 250);
-            setInterval(model.updateIdleTimer, 60000);
+            if (!self.isLocalGame())
+                setInterval(model.updateIdleTimer, 60000);
 
             active_dictionary.subscribe(function () {
                 apply_camera_controls();
@@ -2889,12 +2989,17 @@ $(document).ready(function () {
     handlers.client_state = function (client) {
         switch (model.mode()) {
             case 'landing':
-                if (client.landing_position) {
+                if (client.landing_position || model.isSpectator()) {
                     model.landingOk();
-                    model.setMessage(loc('!LOC(live_game:waiting_for_other_players_to_select_a_spawn_location.message):Waiting for other players to select a spawn location.'));
-                } else {
-                    model.setMessage(loc("!LOC(live_game:pick_a_location_inside_one_of_the_green_zones_to_spawn_your_commander.message):Pick a location inside one of the green zones to spawn your Commander."));
+                    model.setMessage({
+                        message: loc('!LOC(live_game:waiting_for_other_players_to_select_a_spawn_location.message):Waiting for other players to select a spawn location.')
+                    });
                 }
+                else
+                    model.setMessage({
+                        message: loc("!LOC(live_game:pick_a_location_inside_one_of_the_green_zones_to_spawn_your_commander.message):Pick a location inside one of the green zones to spawn your Commander."),
+                        helper: true
+                    });
                 break;
             default: /* do nothing */ break;
         }
@@ -2930,7 +3035,7 @@ $(document).ready(function () {
             if (!_.isUndefined(oldServerMode) && oldServerMode !== model.serverMode() && model.serverMode() === 'game_over') {
                 model.recordGameOver(true);
             }
-            
+
             model.mode(msg.state);
 
             model.setMessage('');
@@ -2959,6 +3064,11 @@ $(document).ready(function () {
 
                 handlers.army_state(msg.data.armies);
             }
+
+            if (msg.data.ranked)
+                model.ranked(msg.data.ranked);
+            else
+                model.ranked(false);
 
             if (msg.data.client)
                 handlers.client_state(msg.data.client);
@@ -3339,14 +3449,19 @@ $(document).ready(function () {
         engine.call("game.allowKeyboard", true);
 
         if (payload.disconnect) {
-            model.abandon().then(function () {
+            var navAway = function() {
                 model.userTriggeredDisconnect(true);
                 model.disconnect();
 
                 window.location.href = payload.url;
-            });
+            };
+
+            if (model.haveUberNet())
+                api.net.removePlayerFromGame().always(navAway);
+            else
+                navAway();
         }
-        else 
+        else
             window.location.href = payload.url;
     };
 
@@ -3427,7 +3542,7 @@ $(document).ready(function () {
     };
 
     handlers['celestialControl.cancel'] = function() {
-        model.celestialControlModel.sourcePlanetIndex(-1);
+        model.celestialControlModel.cancelControl();
     };
 
     handlers['message.clickButton'] = function() {
@@ -3437,6 +3552,14 @@ $(document).ready(function () {
 
     handlers['settings.exit'] = function() {
         model.showSettings(false);
+    };
+
+    handlers['guide.hide'] = function () {
+        model.showPlayerGuide(false);
+    };
+
+    handlers['guide.show'] = function () {
+        model.showPlayerGuide(true);
     };
 
     handlers['query.item_details'] = function(query) {
@@ -3468,12 +3591,12 @@ $(document).ready(function () {
     handlers.event_message = function (payload) {
         switch (payload.type) {
             case 'countdown':
-                var count = payload.message.count;
+                var count = payload.message;
                 if (count > 1)
                     api.audio.playSound('/SE/UI/UI_lobby_count_down');
                 else
                     api.audio.playSound('/SE/UI/UI_lobby_count_down_last');
-                model.setMessage('Game starts in: ' + count);
+                model.setMessage(loc('!LOC(live_game:game_starts_in.message):Game starts in') + ' : ' + count);
                 break;
             case 'start':
                 model.setMessage('');

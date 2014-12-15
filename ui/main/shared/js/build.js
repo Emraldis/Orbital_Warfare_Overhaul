@@ -27,6 +27,7 @@ function BuildHotkeyModel() {
             "/pa/units/air/air_factory/air_factory.json": ["factory", 12],
             "/pa/units/land/bot_factory/bot_factory.json": ["factory", 13],
             "/pa/units/land/vehicle_factory/vehicle_factory.json": ["factory", 14],
+            "/pa/units/land/unit_cannon/unit_cannon.json": ["factory", 0],
 
             "/pa/units/land/laser_defense_adv/laser_defense_adv.json": ["combat", 0],
             "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json": ["combat", 2],
