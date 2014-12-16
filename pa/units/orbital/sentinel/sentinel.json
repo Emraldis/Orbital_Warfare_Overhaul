@@ -60,8 +60,8 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/sentinel/sentinel_tool_weapon.json",
-         "aim_bone":"bone_fire01",
-         "muzzle_bone":"bone_fire01"
+         "aim_bone":"socket_aim",
+         "muzzle_bone":"bone_muzzle"
       }
    ],
    "model":{

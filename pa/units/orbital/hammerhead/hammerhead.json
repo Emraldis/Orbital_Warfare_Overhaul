@@ -59,13 +59,13 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
-         "aim_bone":"bone_fire01",
-         "muzzle_bone":"bone_fire01"
+         "aim_bone":"socket_aim01",
+         "muzzle_bone":"bone_muzzle01"
       },
       {
          "spec_id":"/pa/units/orbital/hammerhead/hammerhead_tool_weapon.json",
-         "aim_bone":"bone_fire02",
-         "muzzle_bone":"bone_fire02"
+         "aim_bone":"socket_aim02",
+         "muzzle_bone":"bone_muzzle02"
       }
    ],
    "events":{
