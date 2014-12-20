@@ -4,7 +4,7 @@
     "display_name": "!LOC(units:teleporter.message):Teleporter",
     "description": "!LOC(units:teleporter_teleports_units_from_one_to_another.message):Teleporter: Teleports units from one to another.",
     "max_health": 3250,
-    "build_metal_cost": 400,
+    "build_metal_cost": 2000,
     "atrophy_rate": 6.66667,
     "atrophy_cool_down": 15,
     "spawn_layers": "WL_LandHorizontal",
@@ -17,8 +17,7 @@
         "UNITTYPE_FabBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_CombatFabAdvBuild",
-        "UNITTYPE_CombatFabBuild",
-        "UNITTYPE_FabOrbBuild"
+        "UNITTYPE_CombatFabBuild"
     ],
     "command_caps": [
         "ORDER_Move",

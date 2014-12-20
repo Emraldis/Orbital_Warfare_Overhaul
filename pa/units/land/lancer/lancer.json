@@ -3,7 +3,7 @@
     "display_name": "Lancer",
     "description": "Advanced anti-orbital- Equipped with long range anti-orbital railgun. Needs radar telemetry to hit targets.",
     "max_health": 1500,
-    "build_metal_cost": 9500,
+    "build_metal_cost": 8500,
     "atrophy_rate": 240,
     "atrophy_cool_down": 15,
 	"area_build_separation":50,
