@@ -164,6 +164,22 @@
             21.7,
             -4.0
          ]
+      }, {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/hailfire/arc.pfx",
+         "offset":[
+            -7.5,
+            3,
+            -2.8
+         ]
+      }, {
+         "type":"moving_forward",
+         "filename":"/pa/units/orbital/hailfire/arc.pfx",
+         "offset":[
+            7.5,
+            3,
+            -2.8
+         ]
       }
    ],
    "TEMP_texelinfo":6.1803,

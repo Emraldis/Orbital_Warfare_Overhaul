@@ -67,7 +67,8 @@
          "audio_cue":"/SE/Build_Complete/air"
       },
       "fired":{
-            "audio_cue": "/SE/Weapons/structure/artillery_long_fire"
+            "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
+			"effect_spec":"/pa/units/orbital/excal/vents.pfx bone_root /pa/units/orbital/excal/fire.pfx"
       },
       "died":{
          "audio_cue":"/SE/Death/Air",
@@ -127,6 +128,12 @@
             16.9,
             0.6764
          ]
+      }, 
+	  	    {
+         "type":"idle",
+		 "bone": "bone_root",
+         "filename":"/pa/units/orbital/excal/gun.pfx",
+         "offset":[ 0, -47.2, 0 ]
       }
    ],
    "TEMP_texelinfo":6.1803,
