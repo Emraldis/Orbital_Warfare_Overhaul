@@ -1,0 +1,24 @@
+{
+  "ammo_id": "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
+  "ammo_source": "factory",
+  "auto_attack": false,
+  "auto_task_type": "none",
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "carpet_fire": true,
+  "default_firing_pitch": -65,
+  "firing_arc_pitch": 1,
+  "firing_arc_yaw": 1,
+  "force_fire_from_muzzle": true,
+  "idle_aim_delay": 5,
+  "manual_fire": true,
+  "max_range": 5000,
+  "pitch_range": 180,
+  "pitch_rate": 15,
+  "rate_of_fire": 2.5,
+  "target_layers": [
+    "WL_LandHorizontal"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 30
+}

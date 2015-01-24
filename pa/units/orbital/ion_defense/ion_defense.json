@@ -60,7 +60,17 @@
          "muzzle_bone":[
             "socket_muzzle"
          ]
-      }
+      },
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_muzzle02",
+        "socket_muzzle03"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/orbital/ion_defense/ion_defense_tool_antidrop.json"
+    }
    ],
    "events":{
       "build_complete":{
