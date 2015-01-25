@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "context": "server",
+    "identifier": "com.pa.orbital_warfare_overhaul",
+    "display_name": "-=Orbital Warfare Overhaul=-",
+    "build": "73939",
+    "date": "2014/10/28",
+    "description": "Improves orbital to a state where it is actually interesting to play. ALPHA VERSION",
+    "category": [
+        "in-game",
+        "server-mod"
+    ],
+    "author": "emraldis, Nicb1, mgmetal13",
+    "version": "ALPHA 0.132",
+    "signature": "(not yet implemented)",
+    "forum": "https://forums.uberent.com/threads/wip-server-orbital-warfare-overhaul.62878/",
+    "icon": "http://i1060.photobucket.com/albums/t459/emraldis/OWOIcon.png",
+    "priority": 100,
+    "dependencies": [
+        "com.pa.owo.icons"
+    ]
+}
