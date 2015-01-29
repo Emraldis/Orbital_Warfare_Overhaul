@@ -60,17 +60,19 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/missile_platform/missile_platform_tool_weapon.json",
-         "aim_bone":"bone_fire01",
-         "muzzle_bone":"bone_fire01"
+         "aim_bone":"bone_pitch01",
+		 "record_index": 0,
+		 "muzzle_bone":"bone_muzzle01"
       },
 	  {
          "spec_id":"/pa/units/orbital/missile_platform/missile_platform_tool_weapon.json",
-         "aim_bone":"bone_fire02",
-         "muzzle_bone":"bone_fire02"
+		 "record_index": 1,
+         "muzzle_bone":"bone_muzzl"
       }
    ],
    "model":{
-      "filename":"/pa/units/orbital/missile_platform/missile_platform.papa"
+      "filename":"/pa/units/orbital/missile_platform/missile_platform.papa",
+	  "animtree": "/pa/anim/anim_trees/double_turret_anim_tree.json"
    },
    "events":{
       "build_complete":{
