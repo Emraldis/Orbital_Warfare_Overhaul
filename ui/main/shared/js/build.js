@@ -30,6 +30,7 @@ function BuildHotkeyModel() {
             "/pa/units/land/unit_cannon/unit_cannon.json": ["factory", 0],
 
             "/pa/units/land/laser_defense_adv/laser_defense_adv.json": ["combat", 0],
+			"/pa/units/land/tesla/tesla.json": ["combat", 1],
             "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json": ["combat", 2],
             "/pa/units/land/laser_defense/laser_defense.json": ["combat", 5],
 			"/pa/units/land/lancer/lancer.json": ["combat", 3],

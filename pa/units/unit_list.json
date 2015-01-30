@@ -112,6 +112,7 @@
         "/pa/units/land/tank_laser_adv/tank_laser_adv.json",
         "/pa/units/land/tank_light_laser/tank_light_laser.json",
         "/pa/units/land/teleporter/teleporter.json",
+		"/pa/units/land/tesla/tesla.json",
         "/pa/units/land/unit_cannon/unit_cannon.json",
     	"/pa/units/land/lancer/lancer.json",
         "/pa/units/land/unit_cannon/unit_cannon.json",
