@@ -3,7 +3,7 @@
   "collision_check": "target",
   "collision_response": "impact",
   "damage": 50,
-  "fx_beam_spec": "/pa/units/land/bot_sniper/bot_sniper_ammo_beam.pfx",
+  "fx_beam_spec": "/pa/units/land/tesla/sparks.pfx",
   "fx_collision_spec": "/pa/effects/specs/default_proj_explosion.pfx",
   "splash_damage": 10,
   "splash_radius": 3
