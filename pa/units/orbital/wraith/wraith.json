@@ -124,7 +124,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_fire01"
         },
         "died": {
             "audio_cue": "/SE/Death/orbital"
