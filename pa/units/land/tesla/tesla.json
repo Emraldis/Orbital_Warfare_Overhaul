@@ -32,24 +32,12 @@
   ],
   "model": [
     {
-      "animations": {
-        "end": "/pa/units/land/radar/radar_anim_end.papa",
-        "loop": "/pa/units/land/radar/radar_anim_loop.papa",
-        "start": "/pa/units/land/radar/radar_anim_start.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-      "filename": "/pa/units/land/radar/radar.papa",
+      "filename": "/pa/units/land/tesla/tesla.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_radar.json"
     },
     {
-      "animations": {
-        "end": "/pa/units/land/radar/radar_anim_end.papa",
-        "loop": "/pa/units/land/radar/radar_anim_loop.papa",
-        "start": "/pa/units/land/radar/radar_anim_start.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-      "filename": "/pa/units/sea/radar/radar.papa",
+      "filename": "/pa/units/land/tesla/tesla.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -75,15 +63,15 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_rotator",
+      "aim_bone": "bone_muzzle",
       "spec_id": "/pa/units/land/tesla/tesla_aa.json"
     },
 	{
-	"aim_bone": "bone_rotator",
+	"aim_bone": "bone_muzzle",
     "spec_id": "/pa/units/land/tesla/tesla_anti_ground.json"
 	},
 	{
-	"aim_bone": "bone_rotator",
+	"aim_bone": "bone_muzzle",
     "spec_id": "/pa/units/land/tesla/tesla_anti_tac.json"
 	}
   ],
