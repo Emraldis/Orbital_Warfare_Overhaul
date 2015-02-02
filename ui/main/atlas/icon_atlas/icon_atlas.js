@@ -120,7 +120,8 @@ $(document).ready(function () {
 			'hammerhead',
 			'hailfire',
 			'sentinel',
-			'missile_platform'
+			'missile_platform',
+			'tesla'
 
         ]);
 
