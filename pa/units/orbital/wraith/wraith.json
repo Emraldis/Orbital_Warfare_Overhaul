@@ -3,7 +3,7 @@
     "display_name": "Wraith",
     "description": "Advanced orbital scout - has decent orbital and ground vision, equipped with radar stealth.",
     "build_metal_cost": 640,
-    "max_health": 1200,
+    "max_health": 1600,
     "gravwell_velocity_multiplier": 6,
     "wreckage_health_frac": 0,
     "consumption":{
