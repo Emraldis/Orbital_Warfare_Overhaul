@@ -96,7 +96,7 @@
             "muzzle_bone": "bone_fire02"
         },
         {
-            "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json",
+            "spec_id": "/pa/units/land/tesla/tesla_anti_tac.json",
             "aim_bone": "bone_pitch01",
             "muzzle_bone": "bone_muzzle01"
         }

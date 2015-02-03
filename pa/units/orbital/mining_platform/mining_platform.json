@@ -12,8 +12,6 @@
    "production":{
       "metal":35,
       "uses_energy":true
-	  
-	  
    },
    "consumption":{
       "energy":2000

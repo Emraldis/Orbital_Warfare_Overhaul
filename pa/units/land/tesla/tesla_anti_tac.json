@@ -3,7 +3,8 @@
   "anti_entity_targets": [
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
-    "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json"
+    "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
+	"/pa/units/orbital/hailfire/hailfire_ammo.json"
   ],
   "auto_attack": true,
   "auto_task_type": "anti_entity",
