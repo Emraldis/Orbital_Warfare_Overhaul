@@ -85,6 +85,7 @@ function BuildHotkeyModel() {
             "/pa/units/orbital/orbital_factory/orbital_factory.json": ["orbital structures", 11],
             "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital structures", 12],
             "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital structures", 13],
+			"/pa/units/orbital/orbital_anti_nuke/orbital_anti_nuke.json": ["orbital structures", 140],
 			"/pa/units/orbital/orbital_mine/orbital_mine.json": ["orbital structures", 9],
                  
             "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json": ["air", 5],
