@@ -3,7 +3,7 @@
 	"display_name": "Hammerhead",
 	"description": "Anti Fighter Escort",
 	"max_health": 9300,
-	"build_metal_cost": 3600,
+	"build_metal_cost": 3800,
 	"gravwell_velocity_multiplier": 6.0,
 	"unit_types": ["UNITTYPE_Fighter",
 	"UNITTYPE_OrbitalDefense",
