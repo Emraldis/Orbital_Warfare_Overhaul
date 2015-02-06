@@ -67,6 +67,19 @@
          "effect_spec":"/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
       }
    },
+   "fx_offsets": [{
+		"type": "idle",
+		"filename": "/pa/units/orbital/orbital_mine/lightblink.pfx",
+		"offset": [0,
+		0,
+		1]
+	},{
+		"type": "idle",
+		"filename": "/pa/units/orbital/orbital_mine/lightblink.pfx",
+		"offset": [0,
+		0,
+		-1]
+	}],
    "mesh_bounds":[
       4.0,
       4.0,

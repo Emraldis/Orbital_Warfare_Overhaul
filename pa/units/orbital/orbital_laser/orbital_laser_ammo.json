@@ -4,7 +4,7 @@
    "flight_type":"Direct",
    "damage":15150,
    "splash_damage":6000,
-   "splash_radius":100,
+   "splash_radius":90,
    "full_damage_splash_radius": 60,
    "splash_damages_allies": true,
    "armor_damage_map":{"AT_Commander":0.4},
@@ -17,7 +17,7 @@
    "burn_radius": 137,
    "damage_volume": {
         "initial_radius": 10,
-        "radius_velocity": 15,
+        "radius_velocity": 17,
         "radius_accel": 0,
         "delay": 1,
         "burnable_remove_radius": 100
