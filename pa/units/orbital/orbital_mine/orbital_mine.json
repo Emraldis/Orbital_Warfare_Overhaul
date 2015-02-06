@@ -55,7 +55,7 @@
    "model":[
       {
          "layer":"WL_Orbital",
-         "filename":"/pa/units/land/land_mine/land_mine.papa"
+         "filename":"/pa/units/orbital/orbital_mine/orbital_mine.papa"
       }
    ],
    "events":{
