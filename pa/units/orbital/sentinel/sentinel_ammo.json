@@ -8,5 +8,5 @@
   "lifetime": 2,
   "max_velocity": 500.0,
   "splash_damage": 5,
-  "splash_radius": 10
+  "splash_radius": 12
 }
