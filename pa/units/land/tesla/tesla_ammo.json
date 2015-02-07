@@ -1,10 +1,10 @@
 {
-  "base_spec": "/pa/ammo/base_beam/base_beam.json",
-  "collision_check": "target",
-  "collision_response": "impact",
-  "damage": 50,
-  "fx_beam_spec": "/pa/units/land/tesla/sparks.pfx",
-  "fx_collision_spec": "/pa/effects/specs/default_proj_explosion.pfx",
-  "splash_damage": 10,
-  "splash_radius": 3
+	"base_spec": "/pa/ammo/base_beam/base_beam.json",
+	"collision_check": "target",
+	"collision_response": "impact",
+	"damage": 40,
+	"fx_beam_spec": "/pa/units/land/tesla/sparks.pfx",
+	"fx_collision_spec": "/pa/effects/specs/default_proj_explosion.pfx",
+	"splash_damage": 10,
+	"splash_radius": 3
 }

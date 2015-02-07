@@ -10,7 +10,7 @@
    "turn_rate":90,
    "armor_damage_map":{"AT_Commander":0.75},
    "influence_radius": 400,
-   "splash_radius":5,
+   "splash_radius":20,
    "physics": {
         "radius": 1,
         "push_class": 1,
