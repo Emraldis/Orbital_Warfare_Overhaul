@@ -11,10 +11,7 @@
    "build_restrictions":"Terrainless",
    "production":{
       "metal":35,
-      "uses_energy":true
-   },
-   "consumption":{
-      "energy":2000
+	  "energy":-2000
    },
    "storage":{
       "metal":10000
