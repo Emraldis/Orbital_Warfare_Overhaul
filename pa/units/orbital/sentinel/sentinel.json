@@ -60,12 +60,13 @@
    "tools":[
       {
          "spec_id":"/pa/units/orbital/sentinel/sentinel_tool_weapon.json",
-         "aim_bone":"socket_aim",
+         "aim_bone":"bone_pitch",
          "muzzle_bone":"bone_muzzle"
       }
    ],
    "model":{
-      "filename":"/pa/units/orbital/sentinel/sentinel.papa"
+      "filename":"/pa/units/orbital/sentinel/sentinel.papa",
+	  "animtree": "/pa/anim/anim_trees/sentinel_anim_tree.json"
    },
    "events":{
       "build_complete":{
