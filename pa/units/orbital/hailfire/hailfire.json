@@ -65,29 +65,34 @@
    },
    "model":{
       "filename":"/pa/units/orbital/hailfire/hailfire.papa",
+	  "animtree": "/pa/anim/anim_trees/hailfire_anim_tree.json",
       "arrows":5
    },
    "tools":[
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
          "fire_event":"fired3",
+		 	"record_index": 2,
          "aim_bone":"bone_pitch03",
          "muzzle_bone":"bone_fire03"
       },{
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
          "fire_event":"fired1",
+		 "record_index": 0,
          "aim_bone":"bone_pitch01",
          "muzzle_bone":"bone_fire01"
       },
       {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_weapon.json",
          "fire_event":"fired4",
+		 "record_index": 3,
          "aim_bone":"bone_pitch04",
          "muzzle_bone":"bone_fire04"
       },
 	  {
          "spec_id":"/pa/units/orbital/hailfire/hailfire_tool_aa_weapon.json",
          "fire_event":"fired2",
+		 "record_index": 1,
          "aim_bone":"bone_pitch02",
          "muzzle_bone":"bone_fire02"
       }
