@@ -72,7 +72,7 @@
       },
       "died":{
          "audio_cue":"/SE/Death/Air",
-         "effect_spec":"/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
+         "effect_spec":"/pa/units/orbital/excal/excal_death.pfx"
       }
    },
    "audio":{
