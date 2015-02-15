@@ -21,10 +21,10 @@
     },
     "unit_types": [
         "UNITTYPE_Mobile",
+		"UNITTYPE_Basic",
         "UNITTYPE_Offense",
         "UNITTYPE_Orbital",
         "UNITTYPE_Fighter",
-        "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild"
     ],
     "command_caps": [
@@ -71,13 +71,13 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 200
+                    "radius": 220
                 },
 				{
                     "layer": "surface_and_air",
                     "channel": "radar",
                     "shape": "capsule",
-                    "radius": 220
+                    "radius": 240
                 }
             ]
         }
