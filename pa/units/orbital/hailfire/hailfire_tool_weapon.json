@@ -12,6 +12,7 @@
    "height_range":400,
    "target_layers":[
       "WL_LandHorizontal",
+      "WL_Underwater",
       "WL_WaterSurface"
    ],
    "target_priorities":[
