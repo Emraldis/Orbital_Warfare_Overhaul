@@ -1,0 +1,465 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "compare0": "<=",
+            "string0": "Orbital",
+            "test_type": "BaseThreat",
+            "value0": 0
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "value0": 5
+          },
+          {
+            "string0": "OrbitalFabber",
+            "test_type": "CanAffordPotentialDrain"
+          }
+        ],
+        [
+          {
+            "compare0": "<=",
+            "string0": "Orbital",
+            "test_type": "BaseThreat",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Construction & Advanced - NukeDefense - Nuke",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "name": "Orbital Fabber",
+      "priority": 199,
+      "to_build": "OrbitalFabber"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "BasicRadarSattelite",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Recon - Structure",
+            "value0": 150
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Recon & Advanced - Structure",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "name": "Basic Radar Sattelite",
+      "priority": 100,
+      "to_build": "BasicRadarSattelite"
+    },
+	{
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "BasicRadarSattelite",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Recon - Structure",
+            "value0": 150
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Recon & Advanced - Structure",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "instance_count": 1,
+      "name": "Wraith",
+      "priority": 102,
+      "to_build": "Wraith"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "BasicRadarSattelite",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Recon - Structure",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "name": "Basic Radar Sattelite - Pri",
+      "priority": 102,
+      "to_build": "BasicRadarSattelite"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "BasicRadarSattelite",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 2
+          },
+          {
+            "boolean": true,
+            "test_type": "OtherPlanetNeedsReconAssistance"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "name": "Basic Radar Sattelite - Other planet",
+      "priority": 199,
+      "to_build": "BasicRadarSattelite"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 15
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "name": "Orbital Fighter",
+      "priority": 100,
+      "to_build": "OrbitalFighter"
+    },
+	{
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 15
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "name": "Hammerhead",
+      "priority": 140,
+      "to_build": "Hammerhead"
+    },
+	{
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 15
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "name": "Excalibur",
+      "priority": 120,
+      "to_build": "Excalibur"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "BaseThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "test_type": "PlanetThreatRatio",
+            "value0": 1.0
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Orbital Fighter - Threat",
+      "priority": 200,
+      "to_build": "OrbitalFighter"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "name": "Orbital Lander",
+      "priority": 111,
+      "to_build": "OrbitalLander"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<=",
+            "string0": "Orbital",
+            "test_type": "BaseThreat",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 20,
+      "min_num_assisters": 8,
+      "name": "Orbital Lander - Commander Evac",
+      "priority": 600,
+      "to_build": "OrbitalLander"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "compare0": "<",
+            "test_type": "PotentialEnergyEfficiency",
+            "value0": 1.0
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "instance_count": 1,
+      "name": "Solar Array",
+      "priority": 195,
+      "to_build": "SolarArray"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "value0": 4
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "instance_count": 1,
+      "name": "Orbital Death Laser",
+      "priority": 100,
+      "to_build": "OrbitalDeathLaser"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "value0": 4
+          }
+        ]
+      ],
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "instance_count": 1,
+      "name": "Hailfire",
+      "priority": 110,
+      "to_build": "Hailfire"
+    }
+  ]
+}
