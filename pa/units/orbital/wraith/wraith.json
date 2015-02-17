@@ -49,7 +49,7 @@
         "vertical_speed": 200
     },
     "physics": {
-        "radius": 5,
+        "radius": 15,
         "push_class": 15,
         "gravity_scalar": 0.001
     },
