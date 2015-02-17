@@ -20,7 +20,7 @@
    "physics":{
       "type":"Structure",
       "shape":"Box",
-      "radius":55,
+      "radius":5,
       "push_class":255,
       "allow_pushing":false,
       "push_sideways":false,
