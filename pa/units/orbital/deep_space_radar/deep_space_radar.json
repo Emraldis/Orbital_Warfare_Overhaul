@@ -36,6 +36,12 @@
                "shape":"capsule",
                "radius":70
             },
+			{
+               "layer":"orbital",
+               "channel":"sight",
+               "shape":"capsule",
+               "radius":500
+            },
             {
                "layer":"celestial",
                "channel":"radar",
