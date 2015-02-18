@@ -6,5 +6,17 @@
    "initial_velocity": 300.0,
    "lifetime": 4,
    "max_velocity": 300.0,
-   "turn_rate": 360
+   "turn_rate": 360,
+   "fx_trail": {
+		"filename": "/pa/units/orbital/missile_platform/photon.pfx",
+		"offset": [0.0,
+		0.0,
+		0.0]
+	}, 
+	"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/missile_tactical",
+			"effect_spec": "/pa/units/orbital/missile_platform/explos.pfx"
+		}
+	}
 }

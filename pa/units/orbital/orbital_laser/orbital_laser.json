@@ -84,7 +84,7 @@
          "audio_cue":"/SE/Build_Complete/orbital"
       },
       "fired":{
-         "audio_cue":"/SE/Weapons/orb/orb_ssx_laser_fire",
+			"audio_cue": "/SE/Death/Commander",
          "effect_spec":"/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle",
          "effect_scale":3
       },

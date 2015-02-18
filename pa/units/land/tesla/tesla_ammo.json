@@ -4,7 +4,7 @@
 	"collision_response": "impact",
 	"damage": 40,
 	"fx_beam_spec": "/pa/units/land/tesla/sparks.pfx",
-	"fx_collision_spec": "/pa/effects/specs/default_proj_explosion.pfx",
+	"fx_collision_spec": "/pa/units/land/tesla/xplos.pfx",
 	"splash_damage": 10,
 	"splash_radius": 3
 }

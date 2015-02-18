@@ -60,7 +60,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+            "effect_spec": "/pa/units/land/lancer/fire.pfx bone_muzzle"
         },
         "died": {
             "audio_cue": "/SE/Death/structure_small",
@@ -72,6 +72,13 @@
             "cue": "/SE/Selection/structure/artillery"
         }
     },
+     "fx_offsets":[
+      {
+         "type":"idle",
+		 "bone": "bone_muzzle",
+         "filename":"/pa/units/land/lancer/idle.pfx",
+         "offset":[0, 0, 0]
+      }],
     "lamps": [
         {
             "offset": [

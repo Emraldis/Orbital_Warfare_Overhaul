@@ -7,6 +7,18 @@
    "lifetime":3,
    "max_velocity":200.0,
    "splash_damage":20,
-   "turn_rate":180,
-   "splash_radius":25
+   "turn_rate":270,
+   "splash_radius":25,
+    "fx_trail": {
+		"filename": "/pa/units/orbital/hammerhead/photon.pfx",
+		"offset": [0.0,
+		0.0,
+		0.0]
+	}, 
+	"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/missile_tactical",
+			"effect_spec": "/pa/units/orbital/hammerhead/explos.pfx"
+		}
+	}
 }

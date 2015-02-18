@@ -65,7 +65,7 @@
 			"audio_cue": "/SE/Build_Complete/air"
 		},
 		"fired": {
-			"audio_cue": "/SE/Weapons/air/fighter_fire"
+			"audio_cue": "/SE/Weapons/old/Unit_Weapon_Fire_Laser"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Air",

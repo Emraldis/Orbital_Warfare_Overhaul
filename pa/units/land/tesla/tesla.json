@@ -21,7 +21,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle01"
+      "effect_spec": "/pa/units/land/tesla/fire.pfx bone_root"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -76,6 +76,13 @@
     "spec_id": "/pa/units/land/tesla/tesla_anti_tac.json"
 	}
   ],
+     "fx_offsets":[
+      {
+         "type":"idle",
+		 "bone": "bone_root",
+         "filename":"/pa/units/land/tesla/idle.pfx",
+         "offset":[0, 0, 0.2]
+      }],
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Advanced",
