@@ -1,0 +1,141 @@
+{
+  "TEMP_texelinfo": 32.1806,
+  "area_build_separation": 1000,
+  "area_build_type": "Sphere",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 29.16667,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 3000,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "description": "Tracks and reveals orbital units in a large area above it.",
+  "display_name": "Tracking Station",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 1.0
+    }
+  },
+  "guard_layer": "WL_Orbital",
+  "lamps": [
+    {
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.75,
+      "offset": [
+        -8.0,
+        8.0,
+        4.22
+      ],
+      "radius": 5.0
+    },
+    {
+      "bone": "bone_pitch",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 2.0,
+      "offset": [
+        2.8,
+        -4.8,
+        0
+      ],
+      "radius": 8.0
+    },
+    {
+      "bone": "bone_pitch",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 2.0,
+      "offset": [
+        -2.8,
+        -4.8,
+        0
+      ],
+      "radius": 8.0
+    }
+  ],
+  "max_health": 1000,
+  "consumption":{
+    "energy":3000
+  },
+  "mesh_bounds": [
+    19,
+    20.6558,
+    15.4
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/ion_defense_anim_tree.json",
+      "filename": "/pa/units/orbital/ion_defense/ion_defense.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_ion_defense.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/ion_defense_anim_tree.json",
+      "filename": "/pa/units/sea/ion_defense/ion_defense.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "physics": {
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 1500,
+          "shape": "capsule",
+          "uses_energy":true
+        },
+        {
+          "channel": "radar",
+          "layer": "orbital",
+          "radius": 1600,
+          "shape": "capsule",
+          "uses_energy":true
+        }
+      ]
+    }
+  },
+  "show_in_orbital_layer": false,
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_muzzle01"
+      ],
+      "record_index": 0,
+      "spec_id": "/pa/units/land/tracking_station/tracking_station_laser.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Recon",
+    "UNITTYPE_FabAdvBuild"
+  ]
+}
