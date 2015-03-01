@@ -37,7 +37,7 @@
 		"acceleration": 5,
 		"brake": 5,
 		"move_speed": 12,
-		"turn_speed": 90,
+		"turn_speed": 270,
 		"hover_time": -1.0
    },
    "physics":{
