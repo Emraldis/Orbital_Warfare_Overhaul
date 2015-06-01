@@ -17,5 +17,6 @@
     "icon": "http://i1060.photobucket.com/albums/t459/emraldis/PA%20stuff/OWO%20Icon.png",
     "priority": 100,
     "dependencies": [
+        "com.pa.owo.icons"
     ]
 }
