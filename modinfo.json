@@ -3,15 +3,15 @@
     "context": "server",
     "identifier": "com.pa.orbital_warfare_overhaul",
     "display_name": "-=Orbital Warfare Overhaul=-",
-    "build": "78071",
-    "date": "2015/2/16",
+    "build": "82369",
+    "date": "2015/5/31",
     "description": "Improves orbital to a state where it is actually interesting to play. BETA VERSION",
     "category": [
         "in-game",
         "server-mod"
     ],
     "author": "emraldis, Nicb1, mgmetal13",
-    "version": "BETA 0.158",
+    "version": "BETA 0.159",
     "signature": "(not yet implemented)",
     "forum": "https://forums.uberent.com/threads/wip-server-orbital-warfare-overhaul.62878/",
     "icon": "http://i1060.photobucket.com/albums/t459/emraldis/PA%20stuff/OWO%20Icon.png",
