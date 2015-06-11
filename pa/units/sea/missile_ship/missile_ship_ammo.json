@@ -25,10 +25,6 @@
   "splash_damage": 0,
   "splash_radius": 0,
   "physics": {
-        "radius": 1,
-        "push_class": 1,
-        "gravity_scalar": 5,
-        "ignore_gravity": true,
         "add_to_spatial_db": true
 	},
   "stages": [
