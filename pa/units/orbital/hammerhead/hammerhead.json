@@ -22,9 +22,7 @@
         "ORDER_Assist"
     ],
     "guard_radius": 300,
-    "guard_layer": [
-        "WL_Orbital"
-    ],
+    "guard_layer": "WL_Orbital",
     "navigation": {
         "type": "orbital",
         "acceleration": 30,
