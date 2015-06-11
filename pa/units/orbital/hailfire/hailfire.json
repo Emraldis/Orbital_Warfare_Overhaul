@@ -5,7 +5,7 @@
    "max_health":8400,
    "build_metal_cost":7200,
    "gravwell_velocity_multiplier":6.0,
-    "spawn_layers": "WL_Orbital",
+    "spawn_layers": "Orbital",
    "unit_types":[
       "UNITTYPE_AirDefense",
       "UNITTYPE_Artillery",

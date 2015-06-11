@@ -5,7 +5,7 @@
     "max_health": 9300,
     "build_metal_cost": 3800,
     "gravwell_velocity_multiplier": 6,
-    "spawn_layers": "WL_Orbital",
+    "spawn_layers": "Orbital",
     "unit_types": [
         "UNITTYPE_Fighter",
         "UNITTYPE_OrbitalDefense",
@@ -23,7 +23,7 @@
     ],
     "guard_radius": 300,
     "guard_layer": [
-        "WL_Orbital"
+        "Orbital"
     ],
     "navigation": {
         "type": "orbital",
