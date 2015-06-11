@@ -82,7 +82,6 @@ function BuildHotkeyModel() {
 			"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital structures", 6],
 			"/pa/units/orbital/sentinel/sentinel.json": ["orbital structures", 7],
             "/pa/units/orbital/defense_satellite/defense_satellite.json": ["orbital structures", 8],
-			"/pa/units/orbital/jump_gate/jump_gate.json": ["orbital structures",100],
             "/pa/units/orbital/orbital_factory/orbital_factory.json": ["orbital structures", 11],
             "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital structures", 12],
             "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital structures", 13],

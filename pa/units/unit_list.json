@@ -123,7 +123,6 @@
         "/pa/units/land/vehicle_factory/vehicle_factory.json",
         "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv.json",
 	    "/pa/units/orbital/orbital_anti_nuke/orbital_anti_nuke.json",
-		"/pa/units/orbital/jump_gate/jump_gate.json",
         "/pa/units/orbital/base_orbital/base_orbital.json",
         "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
         "/pa/units/orbital/deep_space_radar/deep_space_radar.json",

@@ -164,7 +164,7 @@
         "energy_demand": 1000
     },
     "useable": {
-        "type": "Jumpgate",
+        "type": "teleporter",
         "range": 30
     },
     "mesh_bounds": [
