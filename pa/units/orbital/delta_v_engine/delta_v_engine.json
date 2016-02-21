@@ -18,8 +18,8 @@
   "build_metal_cost": 10000,
   "debosse": 1,
   "build_restrictions": "Thrustable",
-  "description": "!LOC(units:delta_v_engine_used_to_move_small_to_medium_celestial_bodies.message):Delta V Engine- Used to move small to medium celestial bodies.",
-  "display_name": "!LOC(units:halley.message):Halley",
+  "description": "Delta V Engine- Used to move small to medium celestial bodies.",
+  "display_name": "Halley",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/delta_v"

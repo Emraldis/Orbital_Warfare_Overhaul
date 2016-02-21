@@ -9,8 +9,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:ion_defense_platform_designed_to_take_out_orbital_units_above_it.message):Ion defense platform- Designed to take out orbital units above it.",
-  "display_name": "!LOC(units:umbrella.message):Umbrella",
+  "description": "Ion defense platform- Designed to take out orbital units above it.",
+  "display_name": "Umbrella",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

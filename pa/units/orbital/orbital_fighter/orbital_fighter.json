@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-    "display_name": "!LOC(units:avenger.message):Avenger",
-    "description": "!LOC(units:orbital_fighter_fast_moving_orbital_fighter_for_offense_and_defense.message):Orbital fighter- Fast moving orbital fighter for offense and defense.",
+    "display_name": "Avenger",
+    "description": "Orbital fighter- Fast moving orbital fighter for offense and defense.",
     "build_metal_cost": 500,
     "max_health": 400,
     "gravwell_velocity_multiplier": 6,

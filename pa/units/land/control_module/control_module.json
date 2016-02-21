@@ -6,8 +6,8 @@
     "atrophy_rate": 500,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 45000,
-    "description": "!LOC(units:analysis_controls_things_big_things.message):Analysis: Controls things. Big things.",
-    "display_name": "!LOC(units:catalyst.message):Catalyst",
+    "description": "Analysis: Controls things. Big things.",
+    "display_name": "Catalyst",
     "production": {
         "energy": -10000
     },

@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC(units:orbital_launcher.message):Orbital Launcher",
-    "description": "!LOC(units:basic_manufacturing_builds_and_launches_satellites_and_other_units.message):Basic manufacturing- Builds and launches satellites and other units.",
+    "display_name": "Orbital Launcher",
+    "description": "Basic manufacturing- Builds and launches satellites and other units.",
     "max_health": 6000,
     "build_metal_cost": 2200,
     "atrophy_rate": 45,

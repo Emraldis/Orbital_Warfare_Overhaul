@@ -1,9 +1,9 @@
 {
    "base_spec":"/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-   "display_name":"!LOC(units:advanced_radar_satellite.message):Advanced Radar Satellite",
+   "display_name":"Advanced Radar Satellite",
    "area_build_type": "Sphere",
    "area_build_separation": 1400,
-   "description":"!LOC(units:advanced_radar_satellite_detects_a_vast_area_for_enemy_land_sea_and_air_units.message):Advanced radar satellite- Detects a vast area for enemy land, sea, and air units.",
+   "description":"Advanced radar satellite- Detects a vast area for enemy land, sea, and air units.",
    "max_health":6500,
    "build_metal_cost":4800,
    "spawn_layers":"WL_Orbital",

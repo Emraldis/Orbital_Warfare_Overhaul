@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "!LOC(units:teleporter.message):Teleporter",
-    "display_name": "!LOC(units:teleporter.message):Teleporter",
-    "description": "!LOC(units:teleporter_teleports_units_from_one_to_another.message):Teleporter: Teleports units from one to another.",
+    "display_name": "Teleporter",
+    "description": "Teleporter: Teleports units from one to another.",
     "max_health": 3250,
     "build_metal_cost": 2000,
     "atrophy_rate": 6.66667,

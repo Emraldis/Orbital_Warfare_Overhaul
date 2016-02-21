@@ -21,8 +21,8 @@
     "ORDER_FactoryBuild",
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:unit_cannon_long_range_unit_dispersal.message):Unit Cannon: Long range unit dispersal",
-  "display_name": "!LOC(units:unit_cannon.message):Unit Cannon",
+  "description": "Unit Cannon: Long range unit dispersal",
+  "display_name": "Unit Cannon",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/unit_cannon "

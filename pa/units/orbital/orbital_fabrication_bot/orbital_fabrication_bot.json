@@ -1,7 +1,7 @@
 {
    "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
-   "display_name":"!LOC(units:orbital_fabrication_bot.message):Orbital Fabrication Bot",
-   "description":"!LOC(units:advanced_fabricator_builds_orbital_satellites_and_ships.message):Advanced fabricator- Builds orbital satellites and ships.",
+   "display_name":"Orbital Fabrication Bot",
+   "description":"Advanced fabricator- Builds orbital satellites and ships.",
    "max_health":800,
    "build_metal_cost":800,
    "system_velocity_multiplier":15.0,
