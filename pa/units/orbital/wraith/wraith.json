@@ -37,7 +37,7 @@
     "navigation": {
         "type": "orbital",
         "acceleration": 180,
-        "brake": 180,
+        "brake": 200,
         "move_speed": 280,
         "turn_speed": 90,
         "dodge_radius": 15,
