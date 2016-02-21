@@ -28,18 +28,18 @@ var Build = (function() {
             {
                 "/pa/units/land/titan_structure/titan_structure.json": ["utility", 0],
                 "/pa/units/land/control_module/control_module.json": ["utility", 1],
-                "/pa/units/land/radar_adv/radar_adv.json": ["utility", 8],
+				"/pa/units/land/tesla/tesla.json": ["utility", 2],
                 "/pa/units/land/energy_plant_adv/energy_plant_adv.json": ["utility", 3],
                 "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json": ["utility", 4],
                 "/pa/units/orbital/delta_v_engine/delta_v_engine.json": ["utility", 7],
-                "/pa/units/land/radar/radar.json": ["utility", 14],
+                "/pa/units/land/radar_adv/radar_adv.json": ["utility", 8],
                 "/pa/units/land/energy_plant/energy_plant.json": ["utility", 9],
                 "/pa/units/land/metal_extractor/metal_extractor.json": ["utility", 10],
                 "/pa/units/land/land_barrier/land_barrier.json": ["utility", 12],
                 "/pa/units/land/teleporter/teleporter.json": ["utility", 13],
+                "/pa/units/land/radar/radar.json": ["utility", 14],
                 "/pa/units/land/energy_storage/energy_storage.json": ["utility", 15],
                 "/pa/units/land/metal_storage/metal_storage.json": ["utility", 16],
-				"/pa/units/land/tesla/tesla.json": ["utility", 2],
 
 
                 "/pa/units/air/titan_air/titan_air.json": ["factory", 2],
@@ -58,7 +58,6 @@ var Build = (function() {
 
 
                 "/pa/units/land/laser_defense_adv/laser_defense_adv.json": ["combat", 0],
-				"/pa/units/land/tesla/tesla.json": ["combat", 1],
                 "/pa/units/land/artillery_long/artillery_long.json": ["combat", 2],
                 "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json": ["combat", 3],
                 "/pa/units/land/nuke_launcher/nuke_launcher.json": ["combat", 4],
@@ -141,15 +140,15 @@ var Build = (function() {
                 "/pa/units/sea/fabrication_barge/fabrication_barge.json": ["sea",17],
 
 
-                "/pa/units/orbital/titan_orbital/titan_orbital.json": ["orbital_structure", 6],
-                "/pa/units/orbital/solar_array/solar_array.json": ["orbital_structure", 7],
-                "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital_structure", 8],
+                "/pa/units/orbital/titan_orbital/titan_orbital.json": ["orbital_structure", 0],
+                "/pa/units/orbital/solar_array/solar_array.json": ["orbital_structure", 15],
+                "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json": ["orbital_structure", 16],
+				"/pa/units/orbital/orbital_mine/orbital_mine.json": ["orbital_structure", 9],
+				"/pa/units/orbital/sentinel/sentinel.json": ["orbital_structure", 10],
+				"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital_structure", 8],
                 "/pa/units/orbital/defense_satellite/defense_satellite.json": ["orbital_structure", 12],
                 "/pa/units/orbital/mining_platform/mining_platform.json": ["orbital_structure", 13],
                 "/pa/units/orbital/orbital_factory/orbital_factory.json": ["orbital_structure", 14],
-				"/pa/units/orbital/missile_platform/missile_platform.json": ["orbital_structure", 11],
-				"/pa/units/orbital/sentinel/sentinel.json": ["orbital_structure", 10],
-				"/pa/units/orbital/orbital_mine/orbital_mine.json": ["orbital_structure", 9],
                 
 
                 "/pa/units/orbital/orbital_battleship/orbital_battleship.json": ["orbital", 0],
