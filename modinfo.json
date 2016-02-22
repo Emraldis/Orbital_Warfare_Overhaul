@@ -5,13 +5,13 @@
     "display_name": "-=Orbital Warfare Overhaul=-",
     "build": "82369",
     "date": "2015/6/05",
-    "description": "Improves orbital to a state where it is actually interesting to play. CURRENTLY BROKEN",
+    "description": "Improves orbital to a state where it is actually interesting to play. CURRENTLY (somewhat) BROKEN, But can run!",
     "category": [
         "in-game",
         "server-mod"
     ],
     "author": "emraldis, Nicb1, mgmetal13",
-    "version": "BETA 0.170",
+    "version": "BETA 0.171",
     "signature": "(not yet implemented)",
     "forum": "https://forums.uberent.com/threads/wip-server-orbital-warfare-overhaul.62878/",
     "icon": "http://i1060.photobucket.com/albums/t459/emraldis/PA%20stuff/OWO%20Icon.png",
